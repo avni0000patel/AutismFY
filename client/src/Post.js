@@ -1,5 +1,4 @@
 import React from 'react';
-import Avatar from '@material-ui/core/Avatar';
 
 function Post({ username, caption, imageURL }) {
     const styles = {
@@ -15,9 +14,9 @@ function Post({ username, caption, imageURL }) {
             padding: '20px 15px',
 
         },
-        post__avatar: {
-            marginRight: '10px',
-        },
+        // post__avatar: {
+        //     marginRight: '10px',
+        // },
         post__image: {
             width: '100%',
             objectFit: 'contain',
@@ -32,7 +31,7 @@ function Post({ username, caption, imageURL }) {
     return (
         <div className="post" style={styles.post}>
             <div className="post__header" style={styles.post__header}>
-                <Avatar className="post__avatar" style={styles.post__avatar} alt="avni0000patel" src="/static/images/avatar/1.jpg"></Avatar>
+                {/* <Avatar className="post__avatar" style={styles.post__avatar} alt="avni0000patel" src="/static/images/avatar/1.jpg"></Avatar> */}
                 <h3>{username}</h3>
             </div>
             <img className="post__image" style={styles.post__image} src={imageURL} alt="postimage"></img>
