@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Avatar from '@material-ui/core/Avatar';
 
 function Post({ username, caption, imageURL }) {
@@ -41,4 +41,4 @@ function Post({ username, caption, imageURL }) {
     )
 }
 
-export default Post
+export default Post;
