@@ -2,24 +2,26 @@ import React from 'react';
 
 function NavTabs({ currentPage, handlePageChange }) {
     const styles = {
-        header: {
+        footer: {
             backgroundColor: 'black',
-            position: 'fixed',
-            bottom: '0',
-            width: '100%',
-            zIndex: '1',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            position: "fixed",
+            left: "0",
+            bottom: "0",
+            width: "100%",
+            height: '40px',
         },
-        float: {
-            position: 'absolute',
-            right: '25px',
-            marginTop: '5px',
-        }
+        link: {
+            color: 'white',
+        },
     }
     return (
-        <header>
-            <ul style={styles.header} className="nav nav-tabs">
+        <footer style={styles.footer}>
+            <ul className="nav nav-tabs">
                 <li className="nav-item">
-                    <a
+                    <a style={styles.link}
                         href="#home"
                         onClick={() => handlePageChange('Home')}
 
@@ -29,7 +31,7 @@ function NavTabs({ currentPage, handlePageChange }) {
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a
+                    <a style={styles.link}
                         href="#search"
                         onClick={() => handlePageChange('Portfolio')}
 
@@ -39,7 +41,7 @@ function NavTabs({ currentPage, handlePageChange }) {
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a
+                    <a style={styles.link}
                         href="#create"
                         onClick={() => handlePageChange('Portfolio')}
 
@@ -49,7 +51,7 @@ function NavTabs({ currentPage, handlePageChange }) {
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a
+                    <a style={styles.link}
                         href="#messages"
                         onClick={() => handlePageChange('Portfolio')}
 
@@ -59,7 +61,7 @@ function NavTabs({ currentPage, handlePageChange }) {
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a
+                    <a style={styles.link}
                         href="#profile"
                         onClick={() => handlePageChange('Portfolio')}
 
@@ -69,7 +71,7 @@ function NavTabs({ currentPage, handlePageChange }) {
                     </a>
                 </li>
             </ul>
-        </header>
+        </footer>
     );
 }
 
