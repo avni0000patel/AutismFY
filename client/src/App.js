@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-// import Home from './components/Home';
+import Container from './components/Container';
 import {
   ApolloClient,
   InMemoryCache,
@@ -37,16 +36,12 @@ function App() {
       <div className="App">
         <Router>
           <>
-            <Navbar />
+            <Container />
             <Routes>
               {/* <Route
-                path='/'
-                element={<Home />}
-              /> */}
-              <Route
                 path='*'
                 element={<h1 className='display-2'>Wrong page!</h1>}
-              />
+              /> */}
             </Routes>
           </>
         </Router>
