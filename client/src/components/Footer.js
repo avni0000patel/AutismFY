@@ -53,11 +53,11 @@ function NavTabs({ currentPage, handlePageChange }) {
                 <li className="nav-item">
                     <a style={styles.link}
                         href="#messages"
-                        onClick={() => handlePageChange('Portfolio')}
+                        onClick={() => handlePageChange('Messages')}
 
                         className={currentPage === 'Messages' ? 'nav-link active' : 'nav-link'}
                     >
-                        Create
+                        Messages
                     </a>
                 </li>
                 <li className="nav-item">
