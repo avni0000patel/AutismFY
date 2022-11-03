@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Home({ username, caption, imageURL }) {
+function Home({ username, caption, imageURL, comments }) {
     const styles = {
         post: {
             backgroundColor: 'white',
@@ -36,6 +36,15 @@ function Home({ username, caption, imageURL }) {
             </div>
             <img className="post__image" style={styles.post__image} src={imageURL} alt="postimage"></img>
             <h4 className="post__text" style={styles.post__text}><strong>{username} </strong>{caption}</h4>
+            {/* {comments.length > 0 ? (
+                <div className="post__comments">
+                    View all comments
+                </div>
+            ) : (
+                <div className="post__comments">
+                    No comments yet
+                </div>
+            )} */}
         </div >
     )
 }
