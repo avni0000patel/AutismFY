@@ -7,26 +7,42 @@ import LoginForm from './LoginForm';
 import Auth from '../utils/auth';
 
 const AppNavbar = () => {
+    const styles = {
+        app__header: {
+            backgroundColor: 'transparent',
+            color: 'white',
+            fontFamily: 'tahoma cursive',
+            position: 'fixed',
+        },
+        app__login: {
+            backgroundColor: 'transparent',
+            color: 'white',
+            fontFamily: 'tahoma cursive',
+        },
+        logo: {
+            height: '100px',
+            width: '150px',
+        },
+    }
     // set modal display state
     const [showModal, setShowModal] = useState(false);
 
     return (
         <>
-            <Navbar bg='dark' variant='dark' expand='lg'>
+            <Navbar bg='dark' expand='lg'>
                 <Container fluid>
                     <Navbar.Toggle aria-controls='navbar' />
                     <Navbar.Collapse id='navbar'>
-                        <div class="app__header">
+                        <div style={styles.app__header} className="app__header">
                             <h1>AutismFY</h1>
                         </div>
-                        <Nav className='ml-auto'>
-                            {/* if user is logged in show saved books and logout */}
+                        <Nav className='ms-auto'>
                             {Auth.loggedIn() ? (
                                 <>
-                                    <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
+                                    <Nav.Link style={styles.app__login} onClick={Auth.logout}>Logout</Nav.Link>
                                 </>
                             ) : (
-                                <Nav.Link onClick={() => setShowModal(true)}>Login/Sign Up</Nav.Link>
+                                <Nav.Link style={styles.app__login} onClick={() => setShowModal(true)}>Login/SignUp</Nav.Link>
                             )}
                         </Nav>
                     </Navbar.Collapse>
@@ -47,7 +63,7 @@ const AppNavbar = () => {
                                     <Nav.Link eventKey='login'>Login</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey='signup'>Sign Up</Nav.Link>
+                                    <Nav.Link eventKey='signup'>SignUp</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                         </Modal.Title>
