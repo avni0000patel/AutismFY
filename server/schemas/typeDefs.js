@@ -24,7 +24,7 @@ type Query {
 
   type Post {
     _id: ID
-    name: String
+    username: String
     image: String
     captions: [String]!
   }
