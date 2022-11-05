@@ -11,6 +11,7 @@
     "develop": "concurrently -n server,react \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm run build",
+    "seed": "cd server && npm run seed",
     "heroku-postbuild": "cd client && npm run build"
   },
   "keywords": [],
