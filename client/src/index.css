@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  width:100%;
+
+}
+
+@media only screen and (max-width: 500px) {
+  #mydiv {
+    width: 80%;
+  }
+}
