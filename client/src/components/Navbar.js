@@ -12,7 +12,7 @@ const AppNavbar = () => {
             backgroundColor: 'transparent',
             color: 'white',
             fontFamily: 'tahoma cursive',
-            position: 'fixed',
+            position: 'absolute',
         },
         app__login: {
             backgroundColor: 'transparent',
