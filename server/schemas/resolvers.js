@@ -41,8 +41,8 @@ const resolvers = {
 
             return { token, user };
         },
-        addPost: async (parent, { username, image, captions, comments, date }) => {
-            return Post.create({ username, image, captions, comments, date });
+        addPost: async (parent, { postId }) => {
+            return Post.create({ _id: postId });
         },
         addCaption: async (parent, { postId, caption }) => {
             return Post.findOneAndUpdate(

@@ -23,3 +23,14 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+export const ADD_POST = gql`
+  mutation addPost($postId: ID!) {
+    addPost(postId: $postId) {
+      _id
+      name
+      image
+      captions
+    }
+  }
+`;
