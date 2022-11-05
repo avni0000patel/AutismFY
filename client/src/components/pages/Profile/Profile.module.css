@@ -58,9 +58,10 @@
 }
 .infoBlock{
     width: 25%;
-    height: 200px;
+    height: 300px;
     margin-left: 4%;
     margin-right: 4%;
+    margin-bottom: 3%;
     padding: 1%;
     background: #FFF;
     color: #000;
