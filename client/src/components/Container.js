@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Create from './pages/Create';
 // import Messages from './pages/Messages.js';
 // import Profile from './pages/Profile'
+import ProfileContainer from './pages/Profile/ProfileContainer';
 
 export default function PortfolioContainer() {
     const styles = {
@@ -31,9 +32,9 @@ export default function PortfolioContainer() {
         // if (currentPage === 'Messages') {
         //     return <Messages />;
         // }
-        // if (currentPage === 'Profile') {
-        //     return <Profile />;
-        // }
+         if (currentPage === 'Profile') {
+          return <ProfileContainer/>;
+        }
         // return <Profile />;
     };
 
