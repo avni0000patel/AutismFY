@@ -43,7 +43,7 @@ const PostList = ({ posts, title }) => {
                             <div className="post" style={styles.post}>
                                 <div className="card mb-3">
                                     <div className="post__header card-header" style={styles.post__header}>
-                                        <h3>{post.name}</h3>
+                                        <h3>{post.username}</h3>
                                     </div>
                                     <div className="card-image">
                                         <img style={styles.post__image} src={post.image} alt="postimage"></img>
