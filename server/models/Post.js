@@ -1,15 +1,19 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const postSchema = new Schema({
-    caption: {
-        type: String
+    captions: {
+        type: String,
+        trim: true,
     },
     image: {
         type: String
     },
     comments: [{ type: Schema.Types.ObjectId, ref: "Comment" }],
     username: {
-        type: String
+        type: String,
+        required: true,
+        unique: true,
+        trim: true,
     },
     date: {
         type: Date,

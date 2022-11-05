@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User } = require('../models/User');
+const { User, Post } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -9,6 +9,12 @@ const resolvers = {
                 return User.findOne({ _id: context.user._id }).select('-__v -password').populate('thoughts');
             }
             throw new AuthenticationError('You need to be logged in!');
+        },
+        posts: async () => {
+            return Post.find();
+        },
+        post: async (parent, { postId }) => {
+            return Post.findOne({ _id: postId });
         },
     },
 
@@ -34,6 +40,31 @@ const resolvers = {
             const token = signToken(user);
 
             return { token, user };
+        },
+        addPost: async (parent, { username, image, captions, comments, date }) => {
+            return Post.create({ username, image, captions, comments, date });
+        },
+        addCaption: async (parent, { postId, caption }) => {
+            return Post.findOneAndUpdate(
+                { _id: postId },
+                {
+                    $addToSet: { captions: caption },
+                },
+                {
+                    new: true,
+                    runValidators: true,
+                }
+            );
+        },
+        removePost: async (parent, { postId }) => {
+            return Post.findOneAndDelete({ _id: postId });
+        },
+        removeCaption: async (parent, { postId, caption }) => {
+            return Post.findOneAndUpdate(
+                { _id: postId },
+                { $pull: { captions: caption } },
+                { new: true }
+            );
         },
     },
 };
