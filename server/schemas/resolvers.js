@@ -1,5 +1,4 @@
-const { AuthenticationError } = require('apollo-server-express');
-const { User, Post } = require('../models');
+const { Profile } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -10,11 +9,12 @@ const resolvers = {
             }
             throw new AuthenticationError('You need to be logged in!');
         },
-        posts: async () => {
-            return Post.find();
+        profiles: async () => {
+            return Profile.find();
         },
-        post: async (parent, { postId }) => {
-            return Post.findOne({ _id: postId });
+
+        profile: async (parent, { profileId }) => {
+            return Profile.findOne({ _id: profileId });
         },
     },
 
@@ -41,12 +41,12 @@ const resolvers = {
 
             return { token, user };
         },
-        addPost: async (parent, { username, image, captions, comments, date }) => {
-            return Post.create({ username, image, captions, comments, date });
+        addProfile: async (parent, { name }) => {
+            return Profile.create({ name });
         },
-        addCaption: async (parent, { postId, caption }) => {
-            return Post.findOneAndUpdate(
-                { _id: postId },
+        addCaption: async (parent, { profileId, caption }) => {
+            return Profile.findOneAndUpdate(
+                { _id: profileId },
                 {
                     $addToSet: { captions: caption },
                 },
@@ -56,12 +56,12 @@ const resolvers = {
                 }
             );
         },
-        removePost: async (parent, { postId }) => {
-            return Post.findOneAndDelete({ _id: postId });
+        removeProfile: async (parent, { profileId }) => {
+            return Profile.findOneAndDelete({ _id: profileId });
         },
-        removeCaption: async (parent, { postId, caption }) => {
-            return Post.findOneAndUpdate(
-                { _id: postId },
+        removeCaption: async (parent, { profileId, caption }) => {
+            return Profile.findOneAndUpdate(
+                { _id: profileId },
                 { $pull: { captions: caption } },
                 { new: true }
             );

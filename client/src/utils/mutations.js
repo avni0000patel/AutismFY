@@ -23,3 +23,23 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+export const ADD_PROFILE = gql`
+  mutation addProfile($name: String!) {
+    addProfile(name: $name) {
+      _id
+      name
+      captions
+    }
+  }
+`;
+
+export const ADD_CAPTION = gql`
+  mutation addCaption($profileId: ID!, $caption: String!) {
+    addCaption(profileId: $profileId, caption: $caption) {
+      _id
+      name
+      captions
+    }
+  }
+`;

@@ -1,52 +1,31 @@
 import React from 'react';
+import { useQuery } from '@apollo/client';
 
-function Home({ username, caption, imageURL, comments }) {
-    const styles = {
-        post: {
-            backgroundColor: 'white',
-            border: '1px solid lightgray',
-            maxWidth: '700px',
-            marginBottom: '45px',
-        },
-        post__header: {
-            display: 'flex',
-            alignItems: 'center',
-            padding: '20px 15px',
+import ProfileList from '../../components/ProfileList';
 
-        },
-        // post__avatar: {
-        //     marginRight: '10px',
-        // },
-        post__image: {
-            width: '100%',
-            objectFit: 'contain',
-            borderTop: '1px solid lightgray',
-            borderBottom: '1px solid lightgray',
-        },
-        post__text: {
-            fontWeight: 'normal',
-            padding: '20px 15px',
-        }
-    }
+import { QUERY_PROFILES } from '../../utils/queries';
+
+const Home = () => {
+    const { loading, data } = useQuery(QUERY_PROFILES);
+    const profiles = data?.profiles || [];
+    console.log(profiles);
     return (
-        <div className="post" style={styles.post}>
-            <div className="post__header" style={styles.post__header}>
-                {/* <Avatar className="post__avatar" style={styles.post__avatar} alt="avni0000patel" src="/static/images/avatar/1.jpg"></Avatar> */}
-                <h3>{username}</h3>
+        <main>
+            <div className="flex-row justify-center">
+
+                <div className="col-12 col-md-10 my-3">
+                    {loading ? (
+                        <div>Loading...</div>
+                    ) : (
+                        <ProfileList
+                            profiles={profiles}
+                            title="Your feed"
+                        />
+                    )}
+                </div>
             </div>
-            <img className="post__image" style={styles.post__image} src={imageURL} alt="postimage"></img>
-            <h4 className="post__text" style={styles.post__text}><strong>{username} </strong>{caption}</h4>
-            {/* {comments.length > 0 ? (
-                <div className="post__comments">
-                    View all comments
-                </div>
-            ) : (
-                <div className="post__comments">
-                    No comments yet
-                </div>
-            )} */}
-        </div >
-    )
-}
+        </main>
+    );
+};
 
 export default Home;
