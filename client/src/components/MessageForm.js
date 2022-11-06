@@ -11,21 +11,26 @@ function MessageForm() {
       <div className="messages-output"></div>
       <Form onSubmit={handleSubmit}>
         <Row>
-          <Col md={11}>
-            <Form.Group>
+          <Col md={10}>
+            <Form.Group
+              className="mb-3"
+              controlId="messageForm.ControlTextarea1"
+            >
               <Form.Control
+                as="textarea"
+                rows={3}
                 type="text"
                 placeholder="Your Message"
               ></Form.Control>
             </Form.Group>
           </Col>
-          <Col md={1}>
+          <Col md={2}>
             <Button
-              variant="primary"
+              variant="info"
               type="submit"
               style={{ width: "100%", backgroundColor: "blue" }}
             >
-              <i className="fas fa-paper-plane"></i>
+              Send
             </Button>
           </Col>
         </Row>
