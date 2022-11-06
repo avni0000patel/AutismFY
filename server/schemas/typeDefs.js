@@ -10,7 +10,7 @@ type Query {
   type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
-    addPost(name: String!): Post
+    addPost(postId: ID!): Post
     addCaption(postId: ID!, caption: String!): Post
     removePost(postId: ID!): Post
     removeCaption(postId: ID!, caption: String!): Post
@@ -23,9 +23,9 @@ type Query {
   }
 
   type Post {
-    _id: ID
-    username: String
-    image: String
+    _id: ID!
+    username: String!
+    image: String!
     captions: [String]!
   }
 
