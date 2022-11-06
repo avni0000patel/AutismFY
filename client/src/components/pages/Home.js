@@ -1,14 +1,14 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 
-import PostList from '../PostList';
+import ProfileList from '../../components/ProfileList';
 
-import { QUERY_POSTS } from '../../utils/queries';
+import { QUERY_PROFILES } from '../../utils/queries';
 
 const Home = () => {
-    const { loading, data } = useQuery(QUERY_POSTS);
-    const posts = data?.posts || [];
-
+    const { loading, data } = useQuery(QUERY_PROFILES);
+    const profiles = data?.profiles || [];
+    console.log(profiles);
     return (
         <main>
             <div className="flex-row justify-center">
@@ -17,9 +17,9 @@ const Home = () => {
                     {loading ? (
                         <div>Loading...</div>
                     ) : (
-                        <PostList
-                            posts={posts}
-                            title="Posts"
+                        <ProfileList
+                            profiles={profiles}
+                            title="Your feed"
                         />
                     )}
                 </div>

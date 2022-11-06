@@ -24,12 +24,21 @@ export const ADD_USER = gql`
   }
 `;
 
-export const ADD_POST = gql`
-  mutation addPost($postId: ID!) {
-    addPost(postId: $postId) {
+export const ADD_PROFILE = gql`
+  mutation addProfile($name: String!) {
+    addProfile(name: $name) {
       _id
-      username
-      image
+      name
+      captions
+    }
+  }
+`;
+
+export const ADD_CAPTION = gql`
+  mutation addCaption($profileId: ID!, $caption: String!) {
+    addCaption(profileId: $profileId, caption: $caption) {
+      _id
+      name
       captions
     }
   }
