@@ -6,6 +6,9 @@ const profileSchema = new Schema({
         required: true,
         trim: true,
     },
+    image: {
+        type: String
+    },
     captions: {
         type: String,
         trim: true,
