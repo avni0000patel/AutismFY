@@ -28,7 +28,7 @@ export const ADD_POST = gql`
   mutation addPost($postId: ID!) {
     addPost(postId: $postId) {
       _id
-      name
+      username
       image
       captions
     }
