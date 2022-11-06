@@ -19,7 +19,6 @@ const Home = () => {
                     ) : (
                         <ProfileList
                             profiles={profiles}
-                            title="Your feed"
                         />
                     )}
                 </div>
