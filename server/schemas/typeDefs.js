@@ -9,6 +9,7 @@ const typeDefs = gql`
   
   type Profile {
     _id: ID
+    avatar: String
     name: String
     image: String
     captions: String

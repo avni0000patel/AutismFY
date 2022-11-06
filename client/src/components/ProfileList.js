@@ -1,4 +1,5 @@
 import React from 'react';
+import Avatar from '@mui/material/avatar';
 
 const ProfileList = ({ profiles, title }) => {
     const styles = {
@@ -14,9 +15,9 @@ const ProfileList = ({ profiles, title }) => {
             padding: '5px 5px',
             color: 'black',
         },
-        // post__avatar: {
-        //     marginRight: '10px',
-        // },
+        post__avatar: {
+            marginRight: '10px',
+        },
         post__image: {
             width: '100%',
             objectFit: 'contain',
@@ -42,7 +43,7 @@ const ProfileList = ({ profiles, title }) => {
                         <div key={profile._id} className="col-12">
                             <div className="post" style={styles.post}>
                                 <div className="post__header" style={styles.post__header}>
-                                    {/* <Avatar className="post__avatar" style={styles.post__avatar} alt="avni0000patel" src="/static/images/avatar/1.jpg"></Avatar> */}
+                                    <Avatar className="post__avatar" style={styles.post__avatar} alt={profile.name} src={profile.avatar}></Avatar>
                                     <h3>{profile.name}</h3>
                                 </div>
                                 <img className="post__image" style={styles.post__image} src={profile.image} alt="postimage"></img>
