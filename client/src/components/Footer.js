@@ -3,7 +3,7 @@ import React from 'react';
 function NavTabs({ currentPage, handlePageChange }) {
     const styles = {
         footer: {
-            backgroundColor: 'black',
+            backgroundColor: 'white',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -14,7 +14,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             height: '40px',
         },
         link: {
-            color: 'white',
+            color: '#8e94f2',
         },
     }
     return (

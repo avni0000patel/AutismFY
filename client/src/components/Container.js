@@ -11,7 +11,7 @@ import ProfileContainer from './pages/Profile/ProfileContainer';
 export default function PortfolioContainer() {
     const styles = {
         all: {
-            backgroundColor: 'lightgray',
+            backgroundColor: '#8e94f2',
             color: '#ffffff',
             minHeight: '100vh',
             fontFamily: 'Playfair Display'
@@ -27,13 +27,13 @@ export default function PortfolioContainer() {
         //     return <Search />;
         // }
         if (currentPage === 'Create') {
-             return <Create />;
+            return <Create />;
         }
         // if (currentPage === 'Messages') {
         //     return <Messages />;
         // }
-         if (currentPage === 'Profile') {
-          return <ProfileContainer/>;
+        if (currentPage === 'Profile') {
+            return <ProfileContainer />;
         }
         // return <Profile />;
     };
