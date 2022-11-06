@@ -11,7 +11,7 @@ const ProfileList = ({ profiles, title }) => {
         post__header: {
             display: 'flex',
             alignItems: 'center',
-            padding: '20px 15px',
+            padding: '5px 5px',
             color: 'black',
         },
         // post__avatar: {
@@ -25,7 +25,7 @@ const ProfileList = ({ profiles, title }) => {
         },
         post__caption: {
             fontWeight: 'normal',
-            padding: '20px 15px',
+            padding: '5px 5px',
             color: 'black',
         }
     }
