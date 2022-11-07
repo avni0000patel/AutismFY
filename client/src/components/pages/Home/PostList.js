@@ -1,7 +1,7 @@
 import React from 'react';
 import Avatar from '@mui/material/avatar';
 
-const ProfileList = ({ profiles }) => {
+const PostList = ({ posts }) => {
     const styles = {
         post: {
             backgroundColor: 'white',
@@ -30,21 +30,21 @@ const ProfileList = ({ profiles }) => {
             color: 'black',
         },
     }
-    if (!profiles.length) {
+    if (!posts.length) {
         return <h3>No Posts Yet</h3>;
     }
 
     return (
         <div>
-            {profiles &&
-                profiles.map((profile) => (
-                    <div key={profile._id} className="post card col-12 my-4" style={styles.post}>
+            {posts &&
+                posts.map((post) => (
+                    <div key={post._id} className="post card col-12 my-4" style={styles.post}>
                         <div className="post__header card-title" style={styles.post__header}>
-                            <Avatar className="post__avatar" style={styles.post__avatar} alt={profile.name} src={profile.avatar}></Avatar>
-                            <h3>{profile.name}</h3>
+                            <Avatar className="post__avatar" style={styles.post__avatar} alt={post.name} src={post.avatar}></Avatar>
+                            <h3>{post.name}</h3>
                         </div>
-                        <img className="post__image card-text" style={styles.post__image} src={profile.image} alt="postimage"></img>
-                        <div className="post__caption" style={styles.post__caption}><strong>{profile.name} </strong>{profile.captions}</div>
+                        <img className="post__image card-text" style={styles.post__image} src={post.image} alt="postimage"></img>
+                        <div className="post__caption" style={styles.post__caption}><strong>{post.name} </strong>{post.captions}</div>
                     </div >
                 ))
             }
@@ -52,4 +52,4 @@ const ProfileList = ({ profiles }) => {
     );
 };
 
-export default ProfileList;
+export default PostList;
