@@ -1,4 +1,4 @@
-const { Profile } = require('../models');
+const { Post } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -9,12 +9,12 @@ const resolvers = {
             }
             throw new AuthenticationError('You need to be logged in!');
         },
-        profiles: async () => {
-            return Profile.find();
+        posts: async () => {
+            return Post.find();
         },
 
-        profile: async (parent, { profileId }) => {
-            return Profile.findOne({ _id: profileId });
+        post: async (parent, { postId }) => {
+            return Post.findOne({ _id: postId });
         },
     },
 
@@ -41,12 +41,12 @@ const resolvers = {
 
             return { token, user };
         },
-        addProfile: async (parent, { name }) => {
-            return Profile.create({ name });
+        addPost: async (parent, { name }) => {
+            return Post.create({ name });
         },
-        addCaption: async (parent, { profileId, caption }) => {
-            return Profile.findOneAndUpdate(
-                { _id: profileId },
+        addCaption: async (parent, { postId, caption }) => {
+            return Post.findOneAndUpdate(
+                { _id: postId },
                 {
                     $addToSet: { captions: caption },
                 },
@@ -56,12 +56,12 @@ const resolvers = {
                 }
             );
         },
-        removeProfile: async (parent, { profileId }) => {
-            return Profile.findOneAndDelete({ _id: profileId });
+        removePost: async (parent, { postId }) => {
+            return Post.findOneAndDelete({ _id: postId });
         },
-        removeCaption: async (parent, { profileId, caption }) => {
-            return Profile.findOneAndUpdate(
-                { _id: profileId },
+        removeCaption: async (parent, { postId, caption }) => {
+            return Post.findOneAndUpdate(
+                { _id: postId },
                 { $pull: { captions: caption } },
                 { new: true }
             );

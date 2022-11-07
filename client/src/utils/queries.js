@@ -1,8 +1,8 @@
 import { gql } from '@apollo/client';
 
-export const QUERY_PROFILES = gql`
-  query allProfiles {
-    profiles {
+export const QUERY_POSTS = gql`
+  query allPosts {
+    posts {
       _id
       name
       avatar
@@ -12,9 +12,9 @@ export const QUERY_PROFILES = gql`
   }
 `;
 
-export const QUERY_SINGLE_PROFILE = gql`
-  query singleProfile($profileId: ID!) {
-    profile(profileId: $profileId) {
+export const QUERY_SINGLE_POST = gql`
+  query singlePost($postId: ID!) {
+    post(postId: $postId) {
       _id
       name
       avatar
