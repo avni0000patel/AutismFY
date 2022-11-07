@@ -1,10 +1,9 @@
-
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Home from "./pages/Home/Home";
 // import Search from './pages/Search';
-import Create from "./pages/Create";
+import Create from "./pages/Create/Create";
 import Messages from "./pages/Messages.js";
 import ProfileContainer from "./pages/Profile/ProfileContainer";
 
