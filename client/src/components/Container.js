@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import Create from "./pages/Create/Create";
 import Messages from "./pages/Messages.js";
 import ProfileContainer from "./pages/Profile/ProfileContainer";
+import Auth from "../utils/auth";
 
 export default function PortfolioContainer() {
     const styles = {
@@ -43,8 +44,19 @@ export default function PortfolioContainer() {
     return (
         <div style={styles.all}>
             <Navbar />
-            {renderPage()}
-            <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
+            {Auth.loggedIn() ? (
+                <>
+                    {renderPage()}
+                    <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
+                </>
+            ) : (
+                <div>
+                    <div>
+                        Please login!
+                    </div>
+                </div>
+            )}
+
         </div>
     );
 }
