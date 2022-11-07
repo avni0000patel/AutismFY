@@ -7,7 +7,6 @@ const ProfileList = ({ profiles }) => {
             backgroundColor: 'white',
             border: '1px solid lightgray',
             maxWidth: '700px',
-            marginBottom: '50px',
             margin: 'auto',
         },
         post__header: {
@@ -29,7 +28,7 @@ const ProfileList = ({ profiles }) => {
             fontWeight: 'normal',
             padding: '5px 5px',
             color: 'black',
-        }
+        },
     }
     if (!profiles.length) {
         return <h3>No Posts Yet</h3>;
@@ -39,7 +38,7 @@ const ProfileList = ({ profiles }) => {
         <div>
             {profiles &&
                 profiles.map((profile) => (
-                    <div key={profile._id} className="post card col-12" style={styles.post}>
+                    <div key={profile._id} className="post card col-12 my-4" style={styles.post}>
                         <div className="post__header card-title" style={styles.post__header}>
                             <Avatar className="post__avatar" style={styles.post__avatar} alt={profile.name} src={profile.avatar}></Avatar>
                             <h3>{profile.name}</h3>
