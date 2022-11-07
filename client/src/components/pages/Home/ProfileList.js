@@ -7,10 +7,8 @@ const ProfileList = ({ profiles }) => {
             backgroundColor: 'white',
             border: '1px solid lightgray',
             maxWidth: '700px',
-            marginBottom: '45px',
-            display: 'flex',
-            justifyContent: 'center',
-
+            marginBottom: '50px',
+            margin: 'auto',
         },
         post__header: {
             display: 'flex',
