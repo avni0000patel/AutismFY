@@ -7,6 +7,7 @@ import LoginForm from "./LoginForm";
 import Auth from "../utils/auth";
 
 const AppNavbar = () => {
+
   const styles = {
     app__header: {
       backgroundColor: "transparent",
@@ -90,6 +91,7 @@ const AppNavbar = () => {
       </Modal>
     </>
   );
+
 };
 
 export default AppNavbar;

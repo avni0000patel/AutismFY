@@ -1,6 +1,7 @@
 import React from "react";
 
 function NavTabs({ currentPage, handlePageChange }) {
+
   const styles = {
     footer: {
       backgroundColor: "black",
@@ -81,6 +82,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       </ul>
     </footer>
   );
+
 }
 
 export default NavTabs;
