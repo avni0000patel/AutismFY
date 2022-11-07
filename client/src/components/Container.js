@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -37,6 +38,7 @@ export default function PortfolioContainer() {
     }
     // return <Profile />;
   };
+
 
   const handlePageChange = (page) => setCurrentPage(page);
 

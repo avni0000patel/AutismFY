@@ -1,9 +1,9 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 
-import ProfileList from '../../components/ProfileList';
+import ProfileList from './ProfileList';
 
-import { QUERY_PROFILES } from '../../utils/queries';
+import { QUERY_PROFILES } from '../../../utils/queries';
 
 const Home = () => {
     const { loading, data } = useQuery(QUERY_PROFILES);
@@ -13,13 +13,12 @@ const Home = () => {
         <main>
             <div className="flex-row justify-center">
 
-                <div className="col-12 col-md-10 my-3">
+                <div className="col-12 my-5">
                     {loading ? (
                         <div>Loading...</div>
                     ) : (
                         <ProfileList
                             profiles={profiles}
-                            title="Your feed"
                         />
                     )}
                 </div>

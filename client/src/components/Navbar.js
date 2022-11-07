@@ -8,15 +8,18 @@ import Auth from '../utils/auth';
 
 const AppNavbar = () => {
     const styles = {
+        header: {
+            backgroundColor: 'white'
+        },
         app__header: {
             backgroundColor: 'transparent',
-            color: 'white',
+            color: '#8e94f2',
             fontFamily: 'tahoma cursive',
             position: 'absolute',
         },
         app__login: {
             backgroundColor: 'transparent',
-            color: 'white',
+            color: '#8e94f2',
             fontFamily: 'tahoma cursive',
         },
         logo: {
@@ -29,7 +32,7 @@ const AppNavbar = () => {
 
     return (
         <>
-            <Navbar bg='dark' expand='lg'>
+            <Navbar className="header" style={styles.header} expand='lg'>
                 <Container fluid>
                     <Navbar.Toggle aria-controls='navbar' />
                     <Navbar.Collapse id='navbar'>
