@@ -1,17 +1,19 @@
 import React from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import "./MessageForm.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 function MessageForm() {
   function handleSubmit(e) {
     e.preventDefault();
   }
+
   return (
     <>
       <div className="messages-output"></div>
       <Form onSubmit={handleSubmit}>
         <Row>
-          <Col md={10}>
+          <Col md={11}>
             <Form.Group
               className="mb-3"
               controlId="messageForm.ControlTextarea1"
@@ -24,13 +26,17 @@ function MessageForm() {
               ></Form.Control>
             </Form.Group>
           </Col>
-          <Col md={2}>
+          <Col md={1}>
             <Button
-              variant="info"
+              variant="outline-light"
               type="submit"
-              style={{ width: "100%", backgroundColor: "blue" }}
+              className="bg-white shadow-1-strong text-dark"
+              style={{
+                width: "100%",
+                backgroundColor: "rainbow",
+              }}
             >
-              Send
+              <i className="bi bi-send"></i>
             </Button>
           </Col>
         </Row>
