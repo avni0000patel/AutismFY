@@ -3,10 +3,11 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Home from "./pages/Home/Home";
 // import Search from './pages/Search';
-import Create from './pages/Create';
-// import Messages from './pages/Messages.js';
+import Create from './pages/Create/Create';
+import Messages from './pages/Messages.js';
 // import Profile from './pages/Profile'
 import ProfileContainer from './pages/Profile/ProfileContainer';
+import Auth from "../utils/auth";
 
 export default function PortfolioContainer() {
     const styles = {
