@@ -11,10 +11,27 @@ import Auth from "../utils/auth";
 export default function PortfolioContainer() {
     const styles = {
         all: {
+            minHeight: "100vh",
             backgroundColor: "#8e94f2",
             color: "#ffffff",
-            minHeight: "100vh",
             fontFamily: "Playfair Display",
+        },
+        homepage: {
+            minHeight: "100vh",
+            backgroundImage: "url(https://st4.depositphotos.com/17775888/31209/i/450/depositphotos_312093322-stock-photo-puzzle-pieces-wooden-background-top.jpg)",
+            fontFamily: "Playfair Display",
+            display: 'flex',
+            overflow: 'hidden',
+            justify: 'center',
+            justifyContent: 'center',
+            alignContent: 'center',
+            alignItems: 'center',
+        },
+        homepage__title: {
+            color: "#8e94f2",
+            display: 'flex',
+            alignItems: 'center',
+            fontWeight: 'bold',
         },
     };
     const [currentPage, setCurrentPage] = useState("Home");
@@ -35,7 +52,6 @@ export default function PortfolioContainer() {
         if (currentPage === "Profile") {
             return <ProfileContainer />;
         }
-        // return <Profile />;
     };
 
 
@@ -50,13 +66,21 @@ export default function PortfolioContainer() {
                     <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
                 </>
             ) : (
-                <div>
-                    <div>
-                        Please login!
+                <div className="homepage" style={styles.homepage}>
+                    <div className="card bg-light text-dark">
+
+                        <div className="homepage__title card-title" style={styles.homepage__title}>
+                            Welcome to AutismFY!
+                            <br />
+                            The place where you can create, connect, and share!
+                            <br />
+                            Please login or signup to continue!
+                        </div>
                     </div>
                 </div>
-            )}
+            )
+            }
 
-        </div>
+        </div >
     );
 }
