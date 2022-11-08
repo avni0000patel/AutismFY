@@ -1,12 +1,26 @@
 [
     {
-        "username": "avni0000patel",
-        "image": "./client/src/assets/ice-cream-gdd20c6bc8_1920.png",
-        "captions": "WOWZA!"
+        "name": "Avni Patel",
+        "avatar": "/static/images/avatar/1.jpg",
+        "image": "https://psu-gatsby-files-prod.s3.amazonaws.com/s3fs-public/styles/4_3_2000w/public/2022/10/PSN-iStock.jpg?h=707772c7&itok=A55aiVDr",
+        "captions": "Spread positivity!"
     },
     {
-        "username": "avni0000patel2",
-        "image": "https://www.news10.com/wp-content/uploads/sites/64/2022/03/ice-cream-gdd20c6bc8_1920.jpg?w=1920&h=1245&crop=1",
-        "captions": "This is crazy!"
+        "name": "Meriem Powell",
+        "avatar": "/static/images/avatar/1.jpg",
+        "image": "https://sites.uab.edu/humanrights/files/2021/03/aam2.jpg",
+        "captions": "Raise awareness!"
+    },
+    {
+        "name": "Pinar Aktas",
+        "avatar": "/static/images/avatar/1.jpg",
+        "image": "https://scx2.b-cdn.net/gfx/news/hires/2022/autism-7.jpg",
+        "captions": "The brain can be a mysterious thing!"
+    },
+    {
+        "name": "Olesia Chugaieva",
+        "avatar": "/static/images/avatar/1.jpg",
+        "image": "https://yourkidsurgentcare.com/wp-content/uploads/2018/04/Untitled-design-4.png",
+        "captions": "This is what autism means to me!"
     }
 ]

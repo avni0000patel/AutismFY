@@ -1,4 +1,3 @@
-const { AuthenticationError } = require('apollo-server-express');
 const { User, Post } = require('../models');
 const { signToken } = require('../utils/auth');
 
@@ -13,6 +12,7 @@ const resolvers = {
         posts: async () => {
             return Post.find();
         },
+
         post: async (parent, { postId }) => {
             return Post.findOne({ _id: postId });
         },
@@ -41,8 +41,8 @@ const resolvers = {
 
             return { token, user };
         },
-        addPost: async (parent, { username, image, captions, comments, date }) => {
-            return Post.create({ username, image, captions, comments, date });
+        addPost: async (parent, { name }) => {
+            return Post.create({ name });
         },
         addCaption: async (parent, { postId, caption }) => {
             return Post.findOneAndUpdate(

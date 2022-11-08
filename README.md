@@ -1,78 +1,54 @@
-# Getting Started with Create React App
+# 👩‍💻Team Nova Twisters 👩‍💻
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## 🏫 AutismFY: Routines, Boards & Connections
 
-In the project directory, you can run:
+This application is designed to help parents and caregivers of younger Autistic children create routine boards, log important information, share and connect with other parents and caregives. Parents are able to create a routine board for their respective child, and also share their boards and other information about the child with doctors, therapists, teachers...etc. In this project we will build and design this app using the React, create our own server-side API, add user authentication, and connect to a database.
 
-### `npm start`
+## ✍️User Story:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+As a Parent I want to be able to open and navigate a webpage
+The webpage provides a login window
+Once I provide my credentials, I am logged into my portal
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📑Acceptance Creteria:
 
-### `npm test`
+```
+Given a webpage functions properly
+When I type my username/email and password
+Then I can log into my portal
+When I am in my boards portal
+Then I am presented with a list of  XYZ XYZ XYZ
+When I click on a XYZ XYZ XYZ
+Then I am able to add XYZ XYZ XYZ
+When I click  XYZ XYZ XYZ
+Then I can see my note presisted and is saved to my profile
+When I click on XYZ XYZ XYZ
+Then I am able to provide XYZ XYZ XYZ
+When I want to XYZ XYZ XYZ
+Then I can click on XYZ XYZ XYZ
+XYZ XYZ XYZ
+XYZ XYZ XYZ
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📹Website Demo:
 
-### `npm run build`
+![AutismFYDemo](/assets/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 💻Link to Deployed Heroku App:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- https://
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 📂Link to the Repo:
 
-### `npm run eject`
+- https://github.com/avni0000patel/AutismFY
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### ✒️Authors:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-
-Authors:
-Avni
-Meriem
-Pinar 
-Olesia
+- Avni Patel
+- Meriem Powell
+- Olesia Chugaieva
+- Pinar Aktas

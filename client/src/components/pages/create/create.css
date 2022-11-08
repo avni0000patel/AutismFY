@@ -37,5 +37,26 @@
        font-size: 20px;
        background-color:rgb(94, 243, 126);
     }
+
+    .section{
+      width: 100vw;
+      height: 100px;
+      background-color: lightsalmon;
+      position: relative;
+    
+      scroll-behavior: smooth;
+      scroll-snap-type: y mandatory;
+      &::-webkit-scrollbar{
+          display: none;
+      }
+
+      > *{
+          width: 100vw;
+          height: calc(100vh - 70px);
+          scroll-snap-align: start;
+
+      }
+
+  }
         
     

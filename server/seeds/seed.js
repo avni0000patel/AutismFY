@@ -1,19 +1,18 @@
 const db = require("../config/connection");
 const { User, Post } = require("../models");
+const postSeeds = require("./postSeeds.json");
 const userSeeds = require("./userSeeds.json");
-const postSeeds = require('./postSeeds.json');
 
-db.once("open", async () => {
+db.once('open', async () => {
   try {
-    await Post.deleteMany({});
     await User.deleteMany({});
-
     await User.create(userSeeds);
+    await Post.deleteMany({});
     await Post.create(postSeeds);
 
-    console.log("Database Seeded! 🌱");
+    console.log('all done!');
     process.exit(0);
-  } catch (error) {
-    console.log(error);
+  } catch (err) {
+    throw err;
   }
 });
