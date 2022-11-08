@@ -42,9 +42,6 @@ const AppNavbar = () => {
           <Container fluid>
             <Navbar.Toggle aria-controls="navbar" />
             <Navbar.Collapse id="navbar">
-              {/* <div style={styles.app__header} className="app__header">
-              <h1>AutismFY</h1>
-            </div> */}
               <Nav className="ms-auto">
                 {Auth.loggedIn() ? (
                   <>
