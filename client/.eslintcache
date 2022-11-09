@@ -1,1 +1,481 @@
-[{"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\index.js":"1","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\App.js":"2","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\redux\\state.js":"3","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Container.js":"4","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\redux\\profileReducer.js":"5","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Messages.js":"6","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Navbar.js":"7","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Footer.js":"8","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Home\\Home.js":"9","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\auth.js":"10","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Profile\\ProfileContainer.jsx":"11","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Sidebar.js":"12","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\MessageForm.js":"13","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\SignupForm.js":"14","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\LoginForm.js":"15","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Home\\PostList.js":"16","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\queries.js":"17","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Profile\\Profile.jsx":"18","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\mutations.js":"19","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Profile\\ProfileCards\\ProfileCards.jsx":"20","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Profile\\BioBlock\\BioText.jsx":"21","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Profile\\BioBlock\\BioChange.jsx":"22","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Create\\Create.jsx":"23","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Create\\planner\\Planner.jsx":"24"},{"size":374,"mtime":1667681410670,"results":"25","hashOfConfig":"26"},{"size":985,"mtime":1667949692657,"results":"27","hashOfConfig":"26"},{"size":225,"mtime":1667662440825,"results":"28","hashOfConfig":"26"},{"size":3149,"mtime":1667949667527,"results":"29","hashOfConfig":"26"},{"size":852,"mtime":1667662440824,"results":"30","hashOfConfig":"26"},{"size":403,"mtime":1667665467243,"results":"31","hashOfConfig":"26"},{"size":3030,"mtime":1667867966579,"results":"32","hashOfConfig":"26"},{"size":2166,"mtime":1667849002534,"results":"33","hashOfConfig":"26"},{"size":747,"mtime":1667849039578,"results":"34","hashOfConfig":"26"},{"size":1409,"mtime":1667355907082,"results":"35","hashOfConfig":"26"},{"size":342,"mtime":1667662440821,"results":"36","hashOfConfig":"26"},{"size":426,"mtime":1667665467242,"results":"37","hashOfConfig":"26"},{"size":1195,"mtime":1667866287929,"results":"38","hashOfConfig":"26"},{"size":4007,"mtime":1667355833999,"results":"39","hashOfConfig":"26"},{"size":3151,"mtime":1667356401048,"results":"40","hashOfConfig":"26"},{"size":1837,"mtime":1667849260770,"results":"41","hashOfConfig":"26"},{"size":377,"mtime":1667786249829,"results":"42","hashOfConfig":"26"},{"size":2070,"mtime":1667662440817,"results":"43","hashOfConfig":"26"},{"size":862,"mtime":1667786349558,"results":"44","hashOfConfig":"26"},{"size":804,"mtime":1667662440819,"results":"45","hashOfConfig":"26"},{"size":506,"mtime":1667662440817,"results":"46","hashOfConfig":"26"},{"size":673,"mtime":1667662440815,"results":"47","hashOfConfig":"26"},{"size":2456,"mtime":1667949644770,"results":"48","hashOfConfig":"26"},{"size":165,"mtime":1667948897378,"results":"49","hashOfConfig":"26"},{"filePath":"50","messages":"51","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"52"},"1prrf58",{"filePath":"53","messages":"54","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"55","messages":"56","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"52"},{"filePath":"57","messages":"58","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"59","messages":"60","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"52"},{"filePath":"61","messages":"62","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"52"},{"filePath":"63","messages":"64","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"52"},{"filePath":"65","messages":"66","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"52"},{"filePath":"67","messages":"68","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"52"},{"filePath":"69","messages":"70","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"52"},{"filePath":"71","messages":"72","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"52"},{"filePath":"73","messages":"74","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"52"},{"filePath":"75","messages":"76","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"52"},{"filePath":"77","messages":"78","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"52"},{"filePath":"79","messages":"80","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"52"},{"filePath":"81","messages":"82","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"52"},{"filePath":"83","messages":"84","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"52"},{"filePath":"85","messages":"86","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"52"},{"filePath":"87","messages":"88","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"52"},{"filePath":"89","messages":"90","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"52"},{"filePath":"91","messages":"92","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"52"},{"filePath":"93","messages":"94","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"52"},{"filePath":"95","messages":"96","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"52"},{"filePath":"97","messages":"98","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"52"},"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\index.js",[],["99","100"],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\App.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\redux\\state.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Container.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\redux\\profileReducer.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Messages.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Navbar.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Footer.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Home\\Home.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\auth.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Profile\\ProfileContainer.jsx",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Sidebar.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\MessageForm.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\SignupForm.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\LoginForm.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Home\\PostList.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\queries.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Profile\\Profile.jsx",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\mutations.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Profile\\ProfileCards\\ProfileCards.jsx",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Profile\\BioBlock\\BioText.jsx",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Profile\\BioBlock\\BioChange.jsx",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Create\\Create.jsx",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Create\\planner\\Planner.jsx",[],{"ruleId":"101","replacedBy":"102"},{"ruleId":"103","replacedBy":"104"},"no-native-reassign",["105"],"no-negated-in-lhs",["106"],"no-global-assign","no-unsafe-negation"]
+[
+  {
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\index.js": "1",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\App.js": "2",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\redux\\state.js": "3",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Container.js": "4",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\redux\\profileReducer.js": "5",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Messages.js": "6",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Navbar.js": "7",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Footer.js": "8",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Home\\Home.js": "9",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\auth.js": "10",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Profile\\ProfileContainer.jsx": "11",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Sidebar.js": "12",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\MessageForm.js": "13",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\SignupForm.js": "14",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\LoginForm.js": "15",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Home\\PostList.js": "16",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\queries.js": "17",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Profile\\Profile.jsx": "18",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\mutations.js": "19",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Profile\\ProfileCards\\ProfileCards.jsx": "20",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Profile\\BioBlock\\BioText.jsx": "21",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Profile\\BioBlock\\BioChange.jsx": "22",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Create\\Create.jsx": "23",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Create\\planner\\Planner.jsx": "24"
+  },
+  {
+    "size": 374,
+    "mtime": 1667681410670,
+    "results": "25",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 985,
+    "mtime": 1667949692657,
+    "results": "27",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 225,
+    "mtime": 1667662440825,
+    "results": "28",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 3149,
+    "mtime": 1667949667527,
+    "results": "29",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 852,
+    "mtime": 1667662440824,
+    "results": "30",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 403,
+    "mtime": 1667665467243,
+    "results": "31",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 3030,
+    "mtime": 1667867966579,
+    "results": "32",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 2166,
+    "mtime": 1667849002534,
+    "results": "33",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 747,
+    "mtime": 1667849039578,
+    "results": "34",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 1409,
+    "mtime": 1667355907082,
+    "results": "35",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 342,
+    "mtime": 1667662440821,
+    "results": "36",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 426,
+    "mtime": 1667665467242,
+    "results": "37",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 1195,
+    "mtime": 1667866287929,
+    "results": "38",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 4007,
+    "mtime": 1667355833999,
+    "results": "39",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 3151,
+    "mtime": 1667356401048,
+    "results": "40",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 1837,
+    "mtime": 1667849260770,
+    "results": "41",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 377,
+    "mtime": 1667786249829,
+    "results": "42",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 2070,
+    "mtime": 1667662440817,
+    "results": "43",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 862,
+    "mtime": 1667786349558,
+    "results": "44",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 804,
+    "mtime": 1667662440819,
+    "results": "45",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 506,
+    "mtime": 1667662440817,
+    "results": "46",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 673,
+    "mtime": 1667662440815,
+    "results": "47",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 2456,
+    "mtime": 1667949644770,
+    "results": "48",
+    "hashOfConfig": "26"
+  },
+  {
+    "size": 165,
+    "mtime": 1667948897378,
+    "results": "49",
+    "hashOfConfig": "26"
+  },
+  {
+    "filePath": "50",
+    "messages": "51",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "52"
+  },
+  "1prrf58",
+  {
+    "filePath": "53",
+    "messages": "54",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "55",
+    "messages": "56",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "52"
+  },
+  {
+    "filePath": "57",
+    "messages": "58",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "59",
+    "messages": "60",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "52"
+  },
+  {
+    "filePath": "61",
+    "messages": "62",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "52"
+  },
+  {
+    "filePath": "63",
+    "messages": "64",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "52"
+  },
+  {
+    "filePath": "65",
+    "messages": "66",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "52"
+  },
+  {
+    "filePath": "67",
+    "messages": "68",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "52"
+  },
+  {
+    "filePath": "69",
+    "messages": "70",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "52"
+  },
+  {
+    "filePath": "71",
+    "messages": "72",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "52"
+  },
+  {
+    "filePath": "73",
+    "messages": "74",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "52"
+  },
+  {
+    "filePath": "75",
+    "messages": "76",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "52"
+  },
+  {
+    "filePath": "77",
+    "messages": "78",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "52"
+  },
+  {
+    "filePath": "79",
+    "messages": "80",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "52"
+  },
+  {
+    "filePath": "81",
+    "messages": "82",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "52"
+  },
+  {
+    "filePath": "83",
+    "messages": "84",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "52"
+  },
+  {
+    "filePath": "85",
+    "messages": "86",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "52"
+  },
+  {
+    "filePath": "87",
+    "messages": "88",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "52"
+  },
+  {
+    "filePath": "89",
+    "messages": "90",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "52"
+  },
+  {
+    "filePath": "91",
+    "messages": "92",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "52"
+  },
+  {
+    "filePath": "93",
+    "messages": "94",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "52"
+  },
+  {
+    "filePath": "95",
+    "messages": "96",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "52"
+  },
+  {
+    "filePath": "97",
+    "messages": "98",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "52"
+  },
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\index.js",
+  [],
+  [
+    "99",
+    "100"
+  ],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\App.js",
+  [],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\redux\\state.js",
+  [],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Container.js",
+  [],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\redux\\profileReducer.js",
+  [],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Messages.js",
+  [],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Navbar.js",
+  [],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Footer.js",
+  [],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Home\\Home.js",
+  [],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\auth.js",
+  [],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Profile\\ProfileContainer.jsx",
+  [],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Sidebar.js",
+  [],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\MessageForm.js",
+  [],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\SignupForm.js",
+  [],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\LoginForm.js",
+  [],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Home\\PostList.js",
+  [],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\queries.js",
+  [],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Profile\\Profile.jsx",
+  [],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\mutations.js",
+  [],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Profile\\ProfileCards\\ProfileCards.jsx",
+  [],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Profile\\BioBlock\\BioText.jsx",
+  [],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Profile\\BioBlock\\BioChange.jsx",
+  [],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Create\\Create.jsx",
+  [],
+  "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Create\\planner\\Planner.jsx",
+  [],
+  {
+    "ruleId": "101",
+    "replacedBy": "102"
+  },
+  {
+    "ruleId": "103",
+    "replacedBy": "104"
+  },
+  "no-native-reassign",
+  [
+    "105"
+  ],
+  "no-negated-in-lhs",
+  [
+    "106"
+  ],
+  "no-global-assign",
+  "no-unsafe-negation"
+]
