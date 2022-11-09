@@ -3,9 +3,10 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Home from "./pages/Home/Home";
 // import Search from './pages/Search';
-import Create from "./pages/Create/Create";
-import Messages from "./pages/Messages.js";
-import ProfileContainer from "./pages/Profile/ProfileContainer";
+import Create from './pages/Create/Create';
+import Messages from './pages/Messages.js';
+// import Profile from './pages/Profile'
+import ProfileContainer from './pages/Profile/ProfileContainer';
 import Auth from "../utils/auth";
 
 export default function PortfolioContainer() {
@@ -33,7 +34,10 @@ export default function PortfolioContainer() {
             alignItems: 'center',
             fontWeight: 'bold',
         },
-    };
+        homepage__title__autismfy: {
+            color: "blue",
+        },
+    }
     const [currentPage, setCurrentPage] = useState("Home");
 
     const renderPage = () => {
@@ -58,7 +62,7 @@ export default function PortfolioContainer() {
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <div style={styles.all}>
+        <div style={styles.all} >
             <Navbar />
             {Auth.loggedIn() ? (
                 <>
@@ -67,13 +71,15 @@ export default function PortfolioContainer() {
                 </>
             ) : (
                 <div className="homepage" style={styles.homepage}>
-                    <div className="card bg-light text-dark">
+                    <div className="card bg-light">
 
                         <div className="homepage__title card-title" style={styles.homepage__title}>
-                            Welcome to AutismFY!
-                            <br />
+                            Welcome to <span classname="homepage__title__autismfy" style={styles.homepage__title__autismfy}>&nbsp;AutismFY!</span>
+                        </div>
+                        <div className="homepage__title card-title" style={styles.homepage__title}>
                             The place where you can create, connect, and share!
-                            <br />
+                        </div>
+                        <div className="homepage__title card-title" style={styles.homepage__title}>
                             Please login or signup to continue!
                         </div>
                     </div>
