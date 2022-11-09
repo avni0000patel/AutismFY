@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Planner.css";
+import "./planner.css";
 
 export default function Planner() {
   const styles = {

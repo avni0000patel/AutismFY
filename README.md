@@ -14,7 +14,7 @@ The webpage provides a login window
 Once I provide my credentials, I am logged into my portal
 ```
 
-## 📑Acceptance Creteria:
+## 📑Acceptance Criteria:
 
 ```
 Given a webpage functions properly
