@@ -4,7 +4,7 @@ import Planner from "./planner/Planner";
 
 import "./create.css"
 
-export default function Create() {
+export default function Create({ currentPage, handlePageChange }) {
 
     return (
         <div className='section'>
@@ -18,7 +18,13 @@ export default function Create() {
                         <li><motion.button className='button'
                             initial={{ opacity: 0.5 }}
                             whileHover={{ scale: 1.1, borderRadius: 20, x: 20, opacity: 1, transition: { duration: 2 } }}
-                            whileTap={{ scale: 0.9 }} >Planner</motion.button>
+                            whileTap={{ scale: 0.9 }} 
+                            ><a href='#planner'
+                            onClick={() => handlePageChange("Planner")} 
+                            className={
+                                currentPage === "Planner" ? "nav-link active" : "nav-link"
+                              }
+                            >Planner</a></motion.button>
                         </li>
                         <li><motion.button className='button'
                             initial={{ opacity: 0.5 }}
@@ -42,10 +48,10 @@ export default function Create() {
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <Planner />
-                </div>
             </div>
-        </div>
+            <div>
+                <Planner />
+            </div>    
+            </div>
     );
 }
