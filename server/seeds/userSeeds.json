@@ -1,17 +1,22 @@
 [
     {
-        "username": "Anne",
-        "email": "abcd@efg.com",
-        "password": "password"
+        "username": "Avni Patel",
+        "email": "avnipatel@example.org",
+        "password": "password01"
     },
     {
-        "username": "Bob",
-        "email": "bcde@fgh.com",
-        "password": "anything"
+        "username": "Meriem Powell",
+        "email": "meriempowell@example.org",
+        "password": "password02"
     },
     {
-        "username": "Carl",
-        "email": "cdef@ghi.com",
-        "password": "something"
+        "username": "Pinar Aktas",
+        "email": "pinaraktas@example.org",
+        "password": "password03"
+    },
+    {
+        "username": "Olesia Chugaieva",
+        "email": "olesiachugaieva@example.org",
+        "password": "password04"
     }
 ]

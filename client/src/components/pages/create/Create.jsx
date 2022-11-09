@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from "framer-motion/dist/framer-motion";
 import Planner from "./planner/Planner";
 
-import "./create.css"
+import "./Create.css"
 
 export default function Create({ currentPage, handlePageChange }) {
 
@@ -18,13 +18,13 @@ export default function Create({ currentPage, handlePageChange }) {
                         <li><motion.button className='button'
                             initial={{ opacity: 0.5 }}
                             whileHover={{ scale: 1.1, borderRadius: 20, x: 20, opacity: 1, transition: { duration: 2 } }}
-                            whileTap={{ scale: 0.9 }} 
-                            ><a href='#planner'
-                            onClick={() => handlePageChange("Planner")} 
+                            whileTap={{ scale: 0.9 }}
+                        ><a href='#planner'
+                            onClick={() => handlePageChange("Planner")}
                             className={
                                 currentPage === "Planner" ? "nav-link active" : "nav-link"
-                              }
-                            >Planner</a></motion.button>
+                            }
+                        >Planner</a></motion.button>
                         </li>
                         <li><motion.button className='button'
                             initial={{ opacity: 0.5 }}
@@ -51,7 +51,7 @@ export default function Create({ currentPage, handlePageChange }) {
             </div>
             <div>
                 <Planner />
-            </div>    
             </div>
+        </div>
     );
 }
