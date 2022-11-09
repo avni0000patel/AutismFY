@@ -62,7 +62,7 @@ const PostForm = () => {
 
     return (
         <div>
-            <h3>What's on your mind?</h3>
+            <h3>Create Post</h3>
 
             {Auth.loggedIn() ? (
                 <>
@@ -79,7 +79,7 @@ const PostForm = () => {
                         <div className="col-12 col-lg-9">
                             <textarea
                                 name="postText"
-                                placeholder="Here's a new post..."
+                                placeholder="Insert caption here... "
                                 value={postText}
                                 className="form-input w-100"
                                 style={{ lineHeight: '1.5', resize: 'vertical' }}
