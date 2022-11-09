@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
-function NavTabs({ currentPage, handlePageChange }) {
+function NavTabs() {
 
   const styles = {
     footer: {
       backgroundColor: "white",
       display: "flex",
       alignItems: "center",
-      justifyContent: "center",
+      justifyContent: "space-around",
       position: "fixed",
       left: "0",
       bottom: "0",
@@ -19,66 +20,33 @@ function NavTabs({ currentPage, handlePageChange }) {
     },
   };
   return (
-    <footer style={styles.footer}>
-      <ul className="nav nav-tabs">
-        <li className="nav-item">
-          <a
-            style={styles.link}
-            href="#home"
-            onClick={() => handlePageChange("Home")}
-            className={currentPage === "About" ? "nav-link active" : "nav-link"}
-          >
+    <footer className="footer">
+      <ul className="nav nav-tabs" style={styles.footer}>
+        <Link className="" to="/">
+          <li className="nav-item" style={styles.link}>
             Home
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            style={styles.link}
-            href="#search"
-            onClick={() => handlePageChange("Portfolio")}
-            className={
-              currentPage === "Search" ? "nav-link active" : "nav-link"
-            }
-          >
-            Search
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            style={styles.link}
-            href="#create"
-            onClick={() => handlePageChange("Create")}
-            className={
-              currentPage === "Create" ? "nav-link active" : "nav-link"
-            }
-          >
+          </li>
+        </Link>
+        <Link className="" to="/create">
+          <li className="nav-item" style={styles.link}>
             Create
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            style={styles.link}
-            href="#messages"
-            onClick={() => handlePageChange("Messages")}
-            className={
-              currentPage === "Messages" ? "nav-link active" : "nav-link"
-            }
-          >
+          </li>
+        </Link>
+        <Link className="" to="/messages">
+          <li className="nav-item" style={styles.link}>
             Messages
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            style={styles.link}
-            href="#profile"
-            onClick={() => handlePageChange("Profile")}
-            className={
-              currentPage === "Profile" ? "nav-link active" : "nav-link"
-            }
-          >
-            Profile
-          </a>
-        </li>
+          </li>
+        </Link>
+        <Link className="" to="/profileA">
+          <li className="nav-item" style={styles.link}>
+            Profile A
+          </li>
+        </Link>
+        <Link className="" to="/me">
+          <li className="nav-item" style={styles.link}>
+            Profile B
+          </li>
+        </Link>
       </ul>
     </footer>
   );

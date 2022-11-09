@@ -1,77 +1,71 @@
-.planner{
-    background-color:crimson;
+.planner {
+    background-color: crimson;
     width: 100vw;
     height: 48vw;
 }
 
-.header{
+.header {
     font-size: 50px;
     text-align: center;
     padding-top: 30px;
 }
 
-.container{
-    width: 1000px;
-    background-color: white;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.box1 {
+    width: 50px;
+    height: 300px;
+    background-color: rgb(236, 239, 72);
+    flex: 5;
+    margin: 10px;
+    color: brown;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-    .box1{
-        width: 50px;
-        height: 300px;
-        background-color: rgb(236, 239, 72);
-        flex:5;
-        margin: 10px;
-        color: brown;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
+.box2 {
+    width: 50px;
+    height: 300px;
+    background-color: rgb(64, 223, 141);
+    flex: 5;
+    margin: 10px;
+    color: brown;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
-    .box2{
-        width: 50px;
-        height: 300px;
-        background-color: rgb(64, 223, 141);
-        flex:5;
-        margin: 10px;
-        color: brown;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-    .box3{
-        width: 50px;
-        height: 300px;
-        background-color: rgb(241, 105, 236);
-        flex:5;
-        margin: 10px;
-        color: brown;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-    .box4{
-        width: 50px;
-        height: 300px;
-        background-color: rgb(130, 218, 68);
-        flex:5;
-        margin: 10px;
-        color: brown;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-    .box5{
-        width: 50px;
-        height: 300px;
-        background-color: rgb(249, 238, 96);
-        flex:5;
-        margin: 10px;
-        color: brown;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-    .box6{
-        width: 50px;
-        height: 300px;
-        background-color: rgb(191, 154, 226);
-        flex:5;
-        margin: 10px;
-        color: brown;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
+.box3 {
+    width: 50px;
+    height: 300px;
+    background-color: rgb(241, 105, 236);
+    flex: 5;
+    margin: 10px;
+    color: brown;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
+.box4 {
+    width: 50px;
+    height: 300px;
+    background-color: rgb(130, 218, 68);
+    flex: 5;
+    margin: 10px;
+    color: brown;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.box5 {
+    width: 50px;
+    height: 300px;
+    background-color: rgb(249, 238, 96);
+    flex: 5;
+    margin: 10px;
+    color: brown;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.box6 {
+    width: 50px;
+    height: 300px;
+    background-color: rgb(191, 154, 226);
+    flex: 5;
+    margin: 10px;
+    color: brown;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
