@@ -1,6 +1,74 @@
-.message-output {
-  height: 80vh;
-  border: 1px solid whitesmoke;
-  overflow-y: scroll;
-  margin: 20px;
+.NoteApp {
+  text-align: center;
+}
+
+.box {
+  position: absolute;
+  cursor: move;
+  color: black;
+  background-color: azure;
+  max-width: 215px;
+  overflow-wrap: break-word;
+  border-radius: 5px;
+  padding: 1em;
+  margin: auto;
+  user-select: none;
+}
+
+body {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  color: white;
+}
+
+#new-item {
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input {
+  border-radius: 5px;
+  color: black;
+  font-size: 1.3em;
+  background-color: transparent;
+  padding: 0.5em;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: rgb(194, 212, 242);
+  font-size: 0.7em;
+  font-weight: 500;
+  padding: 0.3em;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+#delete {
+  font-size: 0.6em;
+  font-weight: 700;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+}
+
+#delete:hover {
+  color: rgb(255, 55, 55);
 }

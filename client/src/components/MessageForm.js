@@ -1,47 +1,83 @@
-import React from "react";
-import { Button, Col, Form, Row } from "react-bootstrap";
+import React, { useState, useEffect } from "react";
 import "./MessageForm.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
+import Draggable from "react-draggable";
+import { v4 as uuidv4 } from "uuid";
+var randomColor = require("randomcolor");
 
 function MessageForm() {
-  function handleSubmit(e) {
-    e.preventDefault();
-  }
+  const [item, setItem] = useState("");
+  const [items, setItems] = useState(
+    JSON.parse(localStorage.getItem("items")) || []
+  );
+
+  const newItem = () => {
+    if (item.trim() !== "") {
+      const newItem = {
+        id: uuidv4(),
+        item: item,
+        color: randomColor({
+          luminosity: "light",
+        }),
+        defaultPos: { x: 100, y: 0 },
+      };
+      setItems((items) => [...items, newItem]);
+      setItem("");
+    }
+  };
+
+  const keyPress = (event) => {
+    var code = event.keyCode || event.which;
+    if (code === 13) {
+      newItem();
+    }
+  };
+
+  useEffect(() => {
+    localStorage.setItem("items", JSON.stringify(items));
+  }, [items]);
+
+  const updatePos = (data, index) => {
+    let newArr = [...items];
+    newArr[index].defaultPos = { x: data.x, y: data.y };
+    setItems(newArr);
+  };
+
+  const deleteNote = (id) => {
+    setItems(items.filter((item) => item.id !== id));
+  };
 
   return (
-    <>
-      <div className="messages-output"></div>
-      <Form onSubmit={handleSubmit}>
-        <Row>
-          <Col md={11}>
-            <Form.Group
-              className="mb-3"
-              controlId="messageForm.ControlTextarea1"
-            >
-              <Form.Control
-                as="textarea"
-                rows={3}
-                type="text"
-                placeholder="Your Message"
-              ></Form.Control>
-            </Form.Group>
-          </Col>
-          <Col md={1}>
-            <Button
-              variant="outline-light"
-              type="submit"
-              className="bg-white shadow-1-strong text-dark"
-              style={{
-                width: "100%",
-                backgroundColor: "rainbow",
+    <div className="NoteApp">
+      <div className="new-item">
+        <input
+          value={item}
+          onChange={(e) => setItem(e.target.value)}
+          placeholder="Enter Note..."
+          onKeyPress={(e) => keyPress(e)}
+        />
+        <button onClick={newItem}>SAVE NOTE</button>
+      </div>
+      <div id="items">
+        {items.map((item, index) => {
+          return (
+            <Draggable
+              key={item.id}
+              defaultPosition={item.defaultPos}
+              onStop={(e, data) => {
+                updatePos(data, index);
               }}
             >
-              <i className="bi bi-send"></i>
-            </Button>
-          </Col>
-        </Row>
-      </Form>
-    </>
+              <div style={{ backgroundColor: item.color }} className="box">
+                <p style={{ margin: 0 }}>{item.item}</p>
+                <button id="delete" onClick={(e) => deleteNote(item.id)}>
+                  X
+                </button>
+              </div>
+            </Draggable>
+          );
+        })}
+      </div>
+    </div>
   );
 }
 
