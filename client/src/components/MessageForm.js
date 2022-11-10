@@ -12,7 +12,7 @@ function MessageForm() {
 
   const newItem = () => {
     if (item.trim() !== "") {
-      const newitem = {
+      const newItem = {
         id: uuidv4(),
         item: item,
         color: randomColor({
@@ -43,27 +43,39 @@ function MessageForm() {
   };
 
   const deleteNote = (id) => {
-    setItems(items.filter((item) => items.id !== id));
+    setItems(items.filter((item) => item.id !== id));
   };
 
   return (
     <div className="NoteApp">
       <div className="new-item">
         <input
-        value={item}
-        onChange={(e) => setItem(e.target.value)}
-        placeholder="Enter Note..."
-        onKeyPress={(e) => keyPress(e)} 
+          value={item}
+          onChange={(e) => setItem(e.target.value)}
+          placeholder="Enter Note..."
+          onKeyPress={(e) => keyPress(e)}
         />
-        <button onClick={newItem}>ENTER</button>
+        <button onClick={newItem}>SAVE NOTE</button>
       </div>
       <div id="items">
         {items.map((item, index) => {
           return (
             <Draggable
-          )
+              key={item.id}
+              defaultPosition={item.defaultPos}
+              onStop={(e, data) => {
+                updatePos(data, index);
+              }}
+            >
+              <div style={{ backgroundColor: item.color }} className="box">
+                <p style={{ margin: 0 }}>{item.item}</p>
+                <button id="delete" onClick={(e) => deleteNote(item.id)}>
+                  X
+                </button>
+              </div>
+            </Draggable>
+          );
         })}
-
       </div>
     </div>
   );
