@@ -17,13 +17,16 @@
     "graphql": "^16.6.0",
     "jwt-decode": "^3.1.2",
     "prettier": "^2.7.1",
+    "randomcolor": "^0.6.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
+    "react-draggable": "^4.4.5",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.2.1",
     "react-scripts": "4.0.1",
     "redux": "^4.2.0",
+    "uuid": "^9.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

@@ -8,9 +8,9 @@ import { QUERY_POSTS, QUERY_ME } from '../utils/queries';
 import Auth from '../utils/auth';
 
 const PostForm = () => {
-    const [postText, setpostText] = useState('');
+    const [image, setImage] = useState('');
 
-    const [characterCount, setCharacterCount] = useState(0);
+    const [postText, setpostText] = useState('');
 
     const [addPost, { error }] = useMutation(ADD_POST, {
         update(cache, { data: { addPost } }) {
@@ -36,28 +36,30 @@ const PostForm = () => {
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
-
+        console.log(image);
         try {
             const { data } = await addPost({
                 variables: {
+                    image,
                     postText,
                     postAuthor: Auth.getProfile().data.username,
                 },
             });
-
+            setImage('')
             setpostText('');
         } catch (err) {
             console.error(err);
         }
     };
 
-    const handleChange = (event) => {
-        const { name, value } = event.target;
+    const handlePhoto = (event) => {
+        const { value } = event.target;
+        setImage(value);
+    };
 
-        if (name === 'postText' && value.length <= 280) {
-            setpostText(value);
-            setCharacterCount(value.length);
-        }
+    const handleChange = (event) => {
+        const { value } = event.target;
+        setpostText(value);
     };
 
     return (
@@ -66,20 +68,22 @@ const PostForm = () => {
 
             {Auth.loggedIn() ? (
                 <>
-                    <p
-                        className={`m-0 ${characterCount === 280 || error ? 'text-danger' : ''
-                            }`}
-                    >
-                        Character Count: {characterCount}/280
-                    </p>
                     <form
                         className="flex-row justify-center justify-space-between-md align-center"
                         onSubmit={handleFormSubmit}
                     >
                         <div className="col-12 col-lg-9">
+                            <input
+                                type="text"
+                                name="image"
+                                placeholder="Create Post"
+                                className="form-input w-100"
+                                style={{ lineHeight: '1.5', resize: 'vertical' }}
+                                onChange={handlePhoto}
+                            ></input>
                             <textarea
                                 name="postText"
-                                placeholder="Insert caption here... "
+                                placeholder="Here's a new post..."
                                 value={postText}
                                 className="form-input w-100"
                                 style={{ lineHeight: '1.5', resize: 'vertical' }}

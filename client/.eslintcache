@@ -1,1 +1,591 @@
-[{"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\index.js":"1","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\App.js":"2","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\redux\\state.js":"3","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\redux\\profileReducer.js":"4","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Footer.js":"5","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Home\\Home.js":"6","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\auth.js":"7","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Create\\Create.jsx":"8","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Sidebar.js":"9","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\MessageForm.js":"10","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\queries.js":"11","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Create\\planner\\Planner.jsx":"12","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\mutations.js":"13","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Header.js":"14","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Signup.js":"15","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Messages\\Messages.js":"16","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileA\\Profile.jsx":"17","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileA\\ProfileCards\\ProfileCards.jsx":"18","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileB\\ProfileB.js":"19","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\PostForm.js":"20","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\PostList.js":"21","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\SinglePost.js":"22","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\CommentList.js":"23","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\CommentForm.js":"24","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Login.js":"25","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileA\\BioBlock\\BioChange.jsx":"26","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileA\\BioBlock\\BioText.jsx":"27","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileA\\ProfileContainer.jsx":"28"},{"size":374,"mtime":1668025384101,"results":"29","hashOfConfig":"30"},{"size":3077,"mtime":1668025344775,"results":"31","hashOfConfig":"30"},{"size":225,"mtime":1667662440825,"results":"32","hashOfConfig":"30"},{"size":852,"mtime":1667662440824,"results":"33","hashOfConfig":"30"},{"size":1304,"mtime":1668023611466,"results":"34","hashOfConfig":"30"},{"size":1078,"mtime":1668024606040,"results":"35","hashOfConfig":"30"},{"size":1184,"mtime":1668024868157,"results":"36","hashOfConfig":"30"},{"size":2782,"mtime":1668024572824,"results":"37","hashOfConfig":"30"},{"size":426,"mtime":1667665467242,"results":"38","hashOfConfig":"30"},{"size":1195,"mtime":1667866287929,"results":"39","hashOfConfig":"30"},{"size":962,"mtime":1668024898909,"results":"40","hashOfConfig":"30"},{"size":762,"mtime":1668024551431,"results":"41","hashOfConfig":"30"},{"size":1088,"mtime":1668024890066,"results":"42","hashOfConfig":"30"},{"size":1773,"mtime":1668023572275,"results":"43","hashOfConfig":"30"},{"size":3904,"mtime":1668023766046,"results":"44","hashOfConfig":"30"},{"size":409,"mtime":1668024620846,"results":"45","hashOfConfig":"30"},{"size":2109,"mtime":1668025261605,"results":"46","hashOfConfig":"30"},{"size":804,"mtime":1667662440819,"results":"47","hashOfConfig":"30"},{"size":2045,"mtime":1668024639767,"results":"48","hashOfConfig":"30"},{"size":3799,"mtime":1668027758951,"results":"49","hashOfConfig":"30"},{"size":3202,"mtime":1668024803764,"results":"50","hashOfConfig":"30"},{"size":2593,"mtime":1668024938293,"results":"51","hashOfConfig":"30"},{"size":1265,"mtime":1668024763708,"results":"52","hashOfConfig":"30"},{"size":3028,"mtime":1668024750720,"results":"53","hashOfConfig":"30"},{"size":3066,"mtime":1668023665172,"results":"54","hashOfConfig":"30"},{"size":673,"mtime":1667662440815,"results":"55","hashOfConfig":"30"},{"size":506,"mtime":1667662440817,"results":"56","hashOfConfig":"30"},{"size":347,"mtime":1668025227564,"results":"57","hashOfConfig":"30"},{"filePath":"58","messages":"59","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},"1prrf58",{"filePath":"61","messages":"62","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"63","messages":"64","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"65","messages":"66","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"67","messages":"68","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"69","messages":"70","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"71","messages":"72","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"73","messages":"74","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"75","messages":"76","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"77","messages":"78","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"79","messages":"80","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"81","messages":"82","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"83","messages":"84","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"85","messages":"86","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"87","messages":"88","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"89","messages":"90","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"91","messages":"92","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"93","messages":"94","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"95","messages":"96","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"97","messages":"98","errorCount":0,"fatalErrorCount":0,"warningCount":1,"fixableErrorCount":0,"fixableWarningCount":0,"source":null},{"filePath":"99","messages":"100","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"101","messages":"102","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"103","messages":"104","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"105","messages":"106","errorCount":0,"fatalErrorCount":0,"warningCount":1,"fixableErrorCount":0,"fixableWarningCount":0,"source":"107","usedDeprecatedRules":"60"},{"filePath":"108","messages":"109","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"110","messages":"111","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"112","messages":"113","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},{"filePath":"114","messages":"115","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"60"},"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\index.js",[],["116","117"],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\App.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\redux\\state.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\redux\\profileReducer.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Footer.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Home\\Home.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\auth.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Create\\Create.jsx",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Sidebar.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\MessageForm.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\queries.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Create\\planner\\Planner.jsx",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\mutations.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Header.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Signup.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Messages\\Messages.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileA\\Profile.jsx",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileA\\ProfileCards\\ProfileCards.jsx",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileB\\ProfileB.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\PostForm.js",["118"],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\PostList.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\SinglePost.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\CommentList.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\CommentForm.js",["119"],"import React, { useState } from 'react';\r\nimport { Link } from 'react-router-dom';\r\nimport { useMutation } from '@apollo/client';\r\n\r\nimport { ADD_COMMENT } from '../utils/mutations';\r\n\r\nimport Auth from '../utils/auth';\r\n\r\nconst CommentForm = ({ postId }) => {\r\n    const [commentText, setCommentText] = useState('');\r\n    const [characterCount, setCharacterCount] = useState(0);\r\n\r\n    const [addComment, { error }] = useMutation(ADD_COMMENT);\r\n\r\n    const handleFormSubmit = async (event) => {\r\n        event.preventDefault();\r\n\r\n        try {\r\n            const { data } = await addComment({\r\n                variables: {\r\n                    postId,\r\n                    commentText,\r\n                    commentAuthor: Auth.getProfile().data.username,\r\n                },\r\n            });\r\n\r\n            setCommentText('');\r\n        } catch (err) {\r\n            console.error(err);\r\n        }\r\n    };\r\n\r\n    const handleChange = (event) => {\r\n        const { name, value } = event.target;\r\n\r\n        if (name === 'commentText' && value.length <= 280) {\r\n            setCommentText(value);\r\n            setCharacterCount(value.length);\r\n        }\r\n    };\r\n\r\n    return (\r\n        <div>\r\n            <h4>What are your thoughts on this post?</h4>\r\n\r\n            {Auth.loggedIn() ? (\r\n                <>\r\n                    <p\r\n                        className={`m-0 ${characterCount === 280 || error ? 'text-danger' : ''\r\n                            }`}\r\n                    >\r\n                        Character Count: {characterCount}/280\r\n                        {error && <span className=\"ml-2\">{error.message}</span>}\r\n                    </p>\r\n                    <form\r\n                        className=\"flex-row justify-center justify-space-between-md align-center\"\r\n                        onSubmit={handleFormSubmit}\r\n                    >\r\n                        <div className=\"col-12 col-lg-9\">\r\n                            <textarea\r\n                                name=\"commentText\"\r\n                                placeholder=\"Add your comment...\"\r\n                                value={commentText}\r\n                                className=\"form-input w-100\"\r\n                                style={{ lineHeight: '1.5', resize: 'vertical' }}\r\n                                onChange={handleChange}\r\n                            ></textarea>\r\n                        </div>\r\n\r\n                        <div className=\"col-12 col-lg-3\">\r\n                            <button className=\"btn btn-primary btn-block py-3\" type=\"submit\">\r\n                                Add Comment\r\n                            </button>\r\n                        </div>\r\n                    </form>\r\n                </>\r\n            ) : (\r\n                <p>\r\n                    You need to be logged in to share your posts. Please{' '}\r\n                    <Link to=\"/login\">login</Link> or <Link to=\"/signup\">signup.</Link>\r\n                </p>\r\n            )}\r\n        </div>\r\n    );\r\n};\r\n\r\nexport default CommentForm;\r\n","C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Login.js",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileA\\BioBlock\\BioChange.jsx",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileA\\BioBlock\\BioText.jsx",[],"C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileA\\ProfileContainer.jsx",[],{"ruleId":"120","replacedBy":"121"},{"ruleId":"122","replacedBy":"123"},{"ruleId":"124","severity":1,"message":"125","line":41,"column":21,"nodeType":"126","messageId":"127","endLine":41,"endColumn":25},{"ruleId":"124","severity":1,"message":"125","line":19,"column":21,"nodeType":"126","messageId":"127","endLine":19,"endColumn":25},"no-native-reassign",["128"],"no-negated-in-lhs",["129"],"no-unused-vars","'data' is assigned a value but never used.","Identifier","unusedVar","no-global-assign","no-unsafe-negation"]
+[
+    {
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\index.js": "1",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\App.js": "2",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\redux\\state.js": "3",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\redux\\profileReducer.js": "4",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Footer.js": "5",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Home\\Home.js": "6",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\auth.js": "7",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Create\\Create.jsx": "8",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Sidebar.js": "9",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\MessageForm.js": "10",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\queries.js": "11",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Create\\planner\\Planner.jsx": "12",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\mutations.js": "13",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Header.js": "14",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Signup.js": "15",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Messages\\Messages.js": "16",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileA\\Profile.jsx": "17",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileA\\ProfileCards\\ProfileCards.jsx": "18",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileB\\ProfileB.js": "19",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\PostForm.js": "20",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\PostList.js": "21",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\SinglePost.js": "22",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\CommentList.js": "23",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\CommentForm.js": "24",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Login.js": "25",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileA\\BioBlock\\BioChange.jsx": "26",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileA\\BioBlock\\BioText.jsx": "27",
+        "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileA\\ProfileContainer.jsx": "28"
+    },
+    {
+        "size": 374,
+        "mtime": 1668025384101,
+        "results": "29",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 3077,
+        "mtime": 1668025344775,
+        "results": "31",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 225,
+        "mtime": 1667662440825,
+        "results": "32",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 852,
+        "mtime": 1667662440824,
+        "results": "33",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 1304,
+        "mtime": 1668023611466,
+        "results": "34",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 1078,
+        "mtime": 1668024606040,
+        "results": "35",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 1184,
+        "mtime": 1668024868157,
+        "results": "36",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 2782,
+        "mtime": 1668024572824,
+        "results": "37",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 426,
+        "mtime": 1667665467242,
+        "results": "38",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 1195,
+        "mtime": 1667866287929,
+        "results": "39",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 962,
+        "mtime": 1668029929505,
+        "results": "40",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 762,
+        "mtime": 1668024551431,
+        "results": "41",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 1120,
+        "mtime": 1668122303703,
+        "results": "42",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 1773,
+        "mtime": 1668023572275,
+        "results": "43",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 3904,
+        "mtime": 1668023766046,
+        "results": "44",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 409,
+        "mtime": 1668024620846,
+        "results": "45",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 2109,
+        "mtime": 1668025261605,
+        "results": "46",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 804,
+        "mtime": 1667662440819,
+        "results": "47",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 2045,
+        "mtime": 1668024639767,
+        "results": "48",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 4006,
+        "mtime": 1668122277340,
+        "results": "49",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 3202,
+        "mtime": 1668024803764,
+        "results": "50",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 2512,
+        "mtime": 1668029504620,
+        "results": "51",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 1265,
+        "mtime": 1668024763708,
+        "results": "52",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 3028,
+        "mtime": 1668024750720,
+        "results": "53",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 3066,
+        "mtime": 1668023665172,
+        "results": "54",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 673,
+        "mtime": 1667662440815,
+        "results": "55",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 506,
+        "mtime": 1667662440817,
+        "results": "56",
+        "hashOfConfig": "30"
+    },
+    {
+        "size": 347,
+        "mtime": 1668025227564,
+        "results": "57",
+        "hashOfConfig": "30"
+    },
+    {
+        "filePath": "58",
+        "messages": "59",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    "1prrf58",
+    {
+        "filePath": "61",
+        "messages": "62",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "63",
+        "messages": "64",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "65",
+        "messages": "66",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "67",
+        "messages": "68",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "69",
+        "messages": "70",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "71",
+        "messages": "72",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "73",
+        "messages": "74",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "75",
+        "messages": "76",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "77",
+        "messages": "78",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "79",
+        "messages": "80",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "81",
+        "messages": "82",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "83",
+        "messages": "84",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0
+    },
+    {
+        "filePath": "85",
+        "messages": "86",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "87",
+        "messages": "88",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "89",
+        "messages": "90",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "91",
+        "messages": "92",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "93",
+        "messages": "94",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "95",
+        "messages": "96",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "97",
+        "messages": "98",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 1,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "source": "99"
+    },
+    {
+        "filePath": "100",
+        "messages": "101",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "102",
+        "messages": "103",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "104",
+        "messages": "105",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "106",
+        "messages": "107",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 1,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "source": "108",
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "109",
+        "messages": "110",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "111",
+        "messages": "112",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "113",
+        "messages": "114",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    {
+        "filePath": "115",
+        "messages": "116",
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": "60"
+    },
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\index.js",
+    [],
+    [
+        "117",
+        "118"
+    ],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\App.js",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\redux\\state.js",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\redux\\profileReducer.js",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Footer.js",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Home\\Home.js",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\auth.js",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Create\\Create.jsx",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Sidebar.js",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\MessageForm.js",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\queries.js",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Create\\planner\\Planner.jsx",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\utils\\mutations.js",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\Header.js",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Signup.js",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Messages\\Messages.js",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileA\\Profile.jsx",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileA\\ProfileCards\\ProfileCards.jsx",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileB\\ProfileB.js",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\PostForm.js",
+    [
+        "119"
+    ],
+    "import React, { useState } from 'react';\r\nimport { Link } from 'react-router-dom';\r\nimport { useMutation } from '@apollo/client';\r\n\r\nimport { ADD_POST } from '../utils/mutations';\r\nimport { QUERY_POSTS, QUERY_ME } from '../utils/queries';\r\n\r\nimport Auth from '../utils/auth';\r\n\r\nconst PostForm = () => {\r\n    const [image, setImage] = useState('');\r\n\r\n    const [postText, setpostText] = useState('');\r\n\r\n    const [addPost, { error }] = useMutation(ADD_POST, {\r\n        update(cache, { data: { addPost } }) {\r\n            try {\r\n                const { posts } = cache.readQuery({ query: QUERY_POSTS });\r\n\r\n                cache.writeQuery({\r\n                    query: QUERY_POSTS,\r\n                    data: { posts: [addPost, ...posts] },\r\n                });\r\n            } catch (e) {\r\n                console.error(e);\r\n            }\r\n\r\n            // update me object's cache\r\n            const { me } = cache.readQuery({ query: QUERY_ME });\r\n            cache.writeQuery({\r\n                query: QUERY_ME,\r\n                data: { me: { ...me, posts: [...me.posts, addPost] } },\r\n            });\r\n        },\r\n    });\r\n\r\n    const handleFormSubmit = async (event) => {\r\n        event.preventDefault();\r\n        console.log(image);\r\n        try {\r\n            const { data } = await addPost({\r\n                variables: {\r\n                    image,\r\n                    postText,\r\n                    postAuthor: Auth.getProfile().data.username,\r\n                },\r\n            });\r\n            setImage('')\r\n            setpostText('');\r\n        } catch (err) {\r\n            console.error(err);\r\n        }\r\n    };\r\n\r\n    const handlePhoto = (event) => {\r\n        const { value } = event.target;\r\n        setImage(value);\r\n    };\r\n\r\n    const handleChange = (event) => {\r\n        const { value } = event.target;\r\n        setpostText(value);\r\n    };\r\n\r\n    return (\r\n        <div>\r\n            <h3>Create Post</h3>\r\n\r\n            {Auth.loggedIn() ? (\r\n                <>\r\n                    <form\r\n                        className=\"flex-row justify-center justify-space-between-md align-center\"\r\n                        onSubmit={handleFormSubmit}\r\n                    >\r\n                        <div className=\"col-12 col-lg-9\">\r\n                            <input\r\n                                type=\"text\"\r\n                                name=\"image\"\r\n                                placeholder=\"Create Post\"\r\n                                className=\"form-input w-100\"\r\n                                style={{ lineHeight: '1.5', resize: 'vertical' }}\r\n                                onChange={handlePhoto}\r\n                            ></input>\r\n                            <textarea\r\n                                name=\"postText\"\r\n                                placeholder=\"Here's a new post...\"\r\n                                value={postText}\r\n                                className=\"form-input w-100\"\r\n                                style={{ lineHeight: '1.5', resize: 'vertical' }}\r\n                                onChange={handleChange}\r\n                            ></textarea>\r\n                        </div>\r\n\r\n                        <div className=\"col-12 col-lg-3\">\r\n                            <button className=\"btn btn-primary btn-block py-3\" type=\"submit\">\r\n                                Add Post\r\n                            </button>\r\n                        </div>\r\n                        {error && (\r\n                            <div className=\"col-12 my-3 bg-danger text-white p-3\">\r\n                                {error.message}\r\n                            </div>\r\n                        )}\r\n                    </form>\r\n                </>\r\n            ) : (\r\n                <p>\r\n                    You need to be logged in to share your posts. Please{' '}\r\n                    <Link to=\"/login\">login</Link> or <Link to=\"/signup\">signup.</Link>\r\n                </p>\r\n            )}\r\n        </div>\r\n    );\r\n};\r\n\r\nexport default PostForm;\r\n",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\PostList.js",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\SinglePost.js",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\CommentList.js",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\CommentForm.js",
+    [
+        "120"
+    ],
+    "import React, { useState } from 'react';\r\nimport { Link } from 'react-router-dom';\r\nimport { useMutation } from '@apollo/client';\r\n\r\nimport { ADD_COMMENT } from '../utils/mutations';\r\n\r\nimport Auth from '../utils/auth';\r\n\r\nconst CommentForm = ({ postId }) => {\r\n    const [commentText, setCommentText] = useState('');\r\n    const [characterCount, setCharacterCount] = useState(0);\r\n\r\n    const [addComment, { error }] = useMutation(ADD_COMMENT);\r\n\r\n    const handleFormSubmit = async (event) => {\r\n        event.preventDefault();\r\n\r\n        try {\r\n            const { data } = await addComment({\r\n                variables: {\r\n                    postId,\r\n                    commentText,\r\n                    commentAuthor: Auth.getProfile().data.username,\r\n                },\r\n            });\r\n\r\n            setCommentText('');\r\n        } catch (err) {\r\n            console.error(err);\r\n        }\r\n    };\r\n\r\n    const handleChange = (event) => {\r\n        const { name, value } = event.target;\r\n\r\n        if (name === 'commentText' && value.length <= 280) {\r\n            setCommentText(value);\r\n            setCharacterCount(value.length);\r\n        }\r\n    };\r\n\r\n    return (\r\n        <div>\r\n            <h4>What are your thoughts on this post?</h4>\r\n\r\n            {Auth.loggedIn() ? (\r\n                <>\r\n                    <p\r\n                        className={`m-0 ${characterCount === 280 || error ? 'text-danger' : ''\r\n                            }`}\r\n                    >\r\n                        Character Count: {characterCount}/280\r\n                        {error && <span className=\"ml-2\">{error.message}</span>}\r\n                    </p>\r\n                    <form\r\n                        className=\"flex-row justify-center justify-space-between-md align-center\"\r\n                        onSubmit={handleFormSubmit}\r\n                    >\r\n                        <div className=\"col-12 col-lg-9\">\r\n                            <textarea\r\n                                name=\"commentText\"\r\n                                placeholder=\"Add your comment...\"\r\n                                value={commentText}\r\n                                className=\"form-input w-100\"\r\n                                style={{ lineHeight: '1.5', resize: 'vertical' }}\r\n                                onChange={handleChange}\r\n                            ></textarea>\r\n                        </div>\r\n\r\n                        <div className=\"col-12 col-lg-3\">\r\n                            <button className=\"btn btn-primary btn-block py-3\" type=\"submit\">\r\n                                Add Comment\r\n                            </button>\r\n                        </div>\r\n                    </form>\r\n                </>\r\n            ) : (\r\n                <p>\r\n                    You need to be logged in to share your posts. Please{' '}\r\n                    <Link to=\"/login\">login</Link> or <Link to=\"/signup\">signup.</Link>\r\n                </p>\r\n            )}\r\n        </div>\r\n    );\r\n};\r\n\r\nexport default CommentForm;\r\n",
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\Login.js",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileA\\BioBlock\\BioChange.jsx",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileA\\BioBlock\\BioText.jsx",
+    [],
+    "C:\\Users\\avni0\\Desktop\\bootcamp\\project03\\AutismFY\\client\\src\\components\\pages\\ProfileA\\ProfileContainer.jsx",
+    [],
+    {
+        "ruleId": "121",
+        "replacedBy": "122"
+    },
+    {
+        "ruleId": "123",
+        "replacedBy": "124"
+    },
+    {
+        "ruleId": "125",
+        "severity": 1,
+        "message": "126",
+        "line": 41,
+        "column": 21,
+        "nodeType": "127",
+        "messageId": "128",
+        "endLine": 41,
+        "endColumn": 25
+    },
+    {
+        "ruleId": "125",
+        "severity": 1,
+        "message": "126",
+        "line": 19,
+        "column": 21,
+        "nodeType": "127",
+        "messageId": "128",
+        "endLine": 19,
+        "endColumn": 25
+    },
+    "no-native-reassign",
+    [
+        "129"
+    ],
+    "no-negated-in-lhs",
+    [
+        "130"
+    ],
+    "no-unused-vars",
+    "'data' is assigned a value but never used.",
+    "Identifier",
+    "unusedVar",
+    "no-global-assign",
+    "no-unsafe-negation"
+]
