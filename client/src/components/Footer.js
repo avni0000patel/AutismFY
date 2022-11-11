@@ -32,6 +32,11 @@ function NavTabs() {
             Create
           </li>
         </Link>
+        <Link className="" to="/todoList">
+          <li className="nav-item" style={styles.link}>
+            Todo
+          </li>
+        </Link>
         <Link className="" to="/messages">
           <li className="nav-item" style={styles.link}>
             Messages

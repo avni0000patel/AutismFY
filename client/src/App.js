@@ -8,17 +8,20 @@ import {
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+
 import Home from './components/pages/Home/Home';
 import Signup from './components/pages/Signup';
 import Login from './components/pages/Login';
 import SinglePost from './components/pages/SinglePost';
 import Create from './components/pages/Create/Create';
+import TodoList from './components/pages/Todo/TodoList';
 import Planner from './components/pages/Create/planner/Planner';
 import Messages from './components/pages/Messages/Messages';
 import ProfileA from './components/pages/ProfileA/ProfileContainer';
 import ProfileB from './components/pages/ProfileB/ProfileB';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import './App.css';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -67,6 +70,10 @@ function App() {
               <Route
                 path="/create"
                 element={<Create />}
+              />
+               <Route className='todo-app'
+                path="/todoList"
+                element={<TodoList />}
               />
               <Route
                 path="/planner"

@@ -21,6 +21,7 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
-    "bootstrap-icons": "^1.9.1"
+    "bootstrap-icons": "^1.9.1",
+    "react-icons": "^4.6.0"
   }
 }
