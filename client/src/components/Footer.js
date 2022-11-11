@@ -27,9 +27,9 @@ function NavTabs() {
             Home
           </li>
         </Link>
-        <Link className="" to="/create">
+        <Link className="" to="/todoList">
           <li className="nav-item" style={styles.link}>
-            Create
+            Todo
           </li>
         </Link>
         <Link className="" to="/messages">
