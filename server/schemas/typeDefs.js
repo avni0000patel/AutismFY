@@ -3,26 +3,36 @@ const { gql } = require('apollo-server-express');
 const typeDefs = gql`
   type User {
     _id: ID
-    username: String
-    email: String
-    password: String
+    username: String!
+    email: String!
+    password: String!
     posts: [Post]!
+    todos: [Todo]!
   }
 
   type Post {
     _id: ID
     image: String!
     postText: String!
-    postAuthor: String
-    createdAt: String
+    postAuthor: String!
+    createdAt: String!
     comments: [Comment]!
   }
 
   type Comment {
     _id: ID
-    commentText: String
-    commentAuthor: String
-    createdAt: String
+    commentText: String!
+    commentAuthor: String!
+    createdAt: String!
+  }
+
+  type Todo {
+    _id: ID
+    name: String!
+    todoText: String!
+    status: Boolean
+    postAuthor: String!
+    createdAt: String!
   }
 
   type Auth {
@@ -35,6 +45,8 @@ const typeDefs = gql`
     user(username: String!): User
     posts(username: String): [Post]
     post(postId: ID!): Post
+    todos(username: String): [Todo]
+    todo(todoId: ID!): Todo
     me: User
   }
 
@@ -45,6 +57,8 @@ const typeDefs = gql`
     addComment(postId: ID!, commentText: String!): Post
     removePost(postId: ID!): Post
     removeComment(postId: ID!, commentId: ID!): Post
+    addTodo(todoText: String!, name: String!): Todo
+    removeTodo(todoId: ID!): Todo
   }
 `;
 

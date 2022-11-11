@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Post } = require('../models');
+const { User, Post, Todo } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -16,6 +16,13 @@ const resolvers = {
         },
         post: async (parent, { postId }) => {
             return Post.findOne({ _id: postId });
+        },
+        todos: async (parent, { username }) => {
+            const params = username ? { username } : {};
+            return Todo.find(params).sort({ createdAt: -1 });
+        },
+        todo: async (parent, { todoId }) => {
+            return Todo.findOne({ _id: todoId });
         },
         me: async (parent, args, context) => {
             if (context.user) {
@@ -112,6 +119,39 @@ const resolvers = {
                     },
                     { new: true }
                 );
+            }
+            throw new AuthenticationError('You need to be logged in!');
+        },
+        addTodo: async (parent, { name, todoText }, context) => {
+            if (context.user) {
+                const todo = await Todo.create({
+                    name,
+                    todoText,
+                    postAuthor: context.user.username,
+                });
+
+                await User.findOneAndUpdate(
+                    { _id: context.user._id },
+                    { $addToSet: { todos: todo._id } }
+                );
+
+                return todo;
+            }
+            throw new AuthenticationError('You need to be logged in!');
+        },
+        removeTodo: async (parent, { todoId }, context) => {
+            if (context.user) {
+                const todo = await Todo.findOneAndDelete({
+                    _id: todoId,
+                    postAuthor: context.user.username,
+                });
+
+                await User.findOneAndUpdate(
+                    { _id: context.user._id },
+                    { $pull: { todos: todo._id } }
+                );
+
+                return todo;
             }
             throw new AuthenticationError('You need to be logged in!');
         },
