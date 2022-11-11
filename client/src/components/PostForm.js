@@ -82,6 +82,7 @@ const PostForm = () => {
                                 type="text"
                                 name="image"
                                 placeholder="Enter image url..."
+                                value={image}
                                 className="form-input w-100"
                                 style={{ lineHeight: '1.5', resize: 'vertical' }}
                                 onChange={handlePhoto}
