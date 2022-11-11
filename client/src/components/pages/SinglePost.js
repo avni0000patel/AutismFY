@@ -1,5 +1,5 @@
 import React from 'react';
-import Avatar from '@mui/material/avatar';
+import { Avatar } from '@mui/material';
 
 // Import the `useParams()` hook
 import { useParams } from 'react-router-dom';
