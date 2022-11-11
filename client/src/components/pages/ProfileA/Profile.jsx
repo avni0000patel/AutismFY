@@ -25,9 +25,10 @@ const Profile = (props) => {
                             changeFormBio={props.changeFormBio}
                             bio={props.profile.bio}
                         /> : <BioChanger
-                                user = {props.user}
-                                changeFormBio={props.changeFormBio}
-                                changeBio={props.changeBio}
+                        setBio = {props.setBio}
+                        user = {props.user}
+                        changeFormBio={props.changeFormBio}
+                        changeBio={props.changeBio}    
                         />
                     }
                 </div>

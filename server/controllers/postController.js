@@ -69,3 +69,12 @@ module.exports.GetAvatar = async (req,res) => {
     })
     res.status(200).json(candidate)
 }
+
+module.exports.ChangeBio = async (req,res) => {
+    let candidate = await User.findOne({
+        username: req.query.username
+    })
+    candidate.bio = req.query.bio 
+    await candidate.save()
+    res.status(200).json("Bio save")
+}
