@@ -76,14 +76,14 @@ const PostForm = () => {
                             <input
                                 type="text"
                                 name="image"
-                                placeholder="Create Post"
+                                placeholder="Enter image url..."
                                 className="form-input w-100"
                                 style={{ lineHeight: '1.5', resize: 'vertical' }}
                                 onChange={handlePhoto}
                             ></input>
                             <textarea
                                 name="postText"
-                                placeholder="Here's a new post..."
+                                placeholder="Enter caption..."
                                 value={postText}
                                 className="form-input w-100"
                                 style={{ lineHeight: '1.5', resize: 'vertical' }}

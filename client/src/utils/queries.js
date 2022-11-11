@@ -8,7 +8,6 @@ export const QUERY_USER = gql`
       email
       posts {
         _id
-        avatar
         image
         postText
         createdAt
@@ -21,7 +20,6 @@ export const QUERY_POSTS = gql`
   query getPosts {
     posts {
       _id
-      avatar
       image
       postText
       postAuthor
@@ -34,7 +32,6 @@ export const QUERY_SINGLE_POST = gql`
   query getSinglePost($postId: ID!) {
     post(postId: $postId) {
       _id
-      avatar
       image
       postText
       postAuthor
@@ -57,7 +54,6 @@ export const QUERY_ME = gql`
       email
       posts {
         _id
-        avatar
         image
         postText
         postAuthor

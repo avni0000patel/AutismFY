@@ -28,7 +28,6 @@ export const ADD_POST = gql`
   mutation addPost($image: String!, $postText: String!) {
     addPost(image: $image, postText: $postText) {
       _id
-      avatar
       image
       postText
       postAuthor
@@ -45,7 +44,6 @@ export const ADD_COMMENT = gql`
   mutation addComment($postId: ID!, $commentText: String!) {
     addComment(postId: $postId, commentText: $commentText) {
       _id
-      avatar
       image
       postText
       postAuthor

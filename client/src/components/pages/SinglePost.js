@@ -55,7 +55,7 @@ const SinglePost = () => {
     return (
         <div className="post my-3" style={styles.post}>
             <h3 className="card-header bg-dark text-light p-2 m-0">
-                <Avatar className="post__avatar" style={styles.post__avatar} alt={post.name} src={post.avatar}></Avatar>
+                <Avatar className="post__avatar" style={styles.post__avatar} alt={post.name} src="/static/images/avatar/1.jpg"></Avatar>
                 {post.postAuthor} <br />
                 <span style={{ fontSize: '1rem' }}>
                     {post.createdAt}
