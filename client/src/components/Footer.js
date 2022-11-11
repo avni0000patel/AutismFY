@@ -37,14 +37,10 @@ function NavTabs() {
             Messages
           </li>
         </Link>
-        <Link className="" to="/profileA">
-          <li className="nav-item" style={styles.link}>
-            Profile A
-          </li>
-        </Link>
+        
         <Link className="" to="/me">
           <li className="nav-item" style={styles.link}>
-            Profile B
+            Profile 
           </li>
         </Link>
       </ul>
