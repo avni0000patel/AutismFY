@@ -52,8 +52,6 @@ function Notes() {
 
   return (
     <div>
-      <h3>Create a Note</h3>
-
       {Auth.loggedIn() ? (
         <>
           <div className="NoteApp">

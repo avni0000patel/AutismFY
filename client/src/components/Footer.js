@@ -28,7 +28,7 @@ function NavTabs() {
         </Link>
         <Link className="" to="/todoList">
           <li className="nav-item" style={styles.link}>
-            Todo
+            To-Do
           </li>
         </Link>
         <Link className="" to="/notes">
