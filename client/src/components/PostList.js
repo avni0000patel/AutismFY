@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Avatar from '@mui/material/avatar';
+import { Avatar } from '@mui/material';
 
 const PostList = ({
     posts,
