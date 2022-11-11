@@ -9,6 +9,9 @@ import ProfileCards from './ProfileCards/ProfileCards'
 const Profile = (props) => {
     return(
         <>
+        <div className="flex-row justify-center">
+        <h2 className="col-12 col-md-10 bg-dark text-light p-3 mb-1">Viewing your Profile</h2>
+        </div>
             <div className={style.profileBlock}>
             {!props.profile.changer? <img className={style.imgProfile} src={`http://localhost:3001/static/img/${props.profile.imgSrc}`} alt=""/> : <UploadAvatar setProfile={props.setProfile} reloadWithImg={props.changeFormBio} user={props.user}/>}
                 <div className={style.follAndBio}>
