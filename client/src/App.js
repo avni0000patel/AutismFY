@@ -14,7 +14,7 @@ import Signup from './components/pages/Signup';
 import Login from './components/pages/Login';
 import SinglePost from './components/pages/SinglePost';
 import TodoList from './components/pages/Todo/TodoList';
-import Messages from './components/pages/Messages/Messages';
+import Messages from './components/pages/Notes/Note';
 import ProfileA from './components/pages/ProfileA/ProfileB';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -69,8 +69,8 @@ function App() {
                 element={<TodoList />}
               />
               <Route
-                path="/messages"
-                element={<Messages />}
+                path="/notes"
+                element={<Note />}
               />
               <Route
                 path="/me"
