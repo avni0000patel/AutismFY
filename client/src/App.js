@@ -15,8 +15,7 @@ import SinglePost from './components/pages/SinglePost';
 import Create from './components/pages/Create/Create';
 import Planner from './components/pages/Create/planner/Planner';
 import Messages from './components/pages/Messages/Messages';
-import ProfileA from './components/pages/ProfileA/ProfileContainer';
-import ProfileB from './components/pages/ProfileB/ProfileB';
+import ProfileA from './components/pages/ProfileA/ProfileB';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -77,16 +76,12 @@ function App() {
                 element={<Messages />}
               />
               <Route
-                path="/profileA"
+                path="/me"
                 element={<ProfileA />}
               />
               <Route
-                path="/me"
-                element={<ProfileB />}
-              />
-              <Route
                 path="/profiles/:username"
-                element={<ProfileB />}
+                element={<ProfileA />}
               />
               <Route
                 path="/posts/:postId"
