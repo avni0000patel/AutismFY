@@ -7,16 +7,20 @@ const Header = () => {
   const styles = {
     header: {
       backgroundColor: "white",
-      borderBottom: '1px solid lightgray',
+      borderBottom: '2px solid #5d0cff',
     },
     app__header: {
       backgroundColor: "transparent",
-      color: "#8e94f2",
+      color: "#5d0cff",
       fontFamily: "tahoma cursive",
+    },
+    app__button: {
+      backgroundColor: "#5d0cff",
+      color: 'white',
     },
     app__login: {
       backgroundColor: "transparent",
-      color: "#8e94f2",
+      color: "#5d0cff",
       fontFamily: "tahoma cursive",
     }
   };
@@ -36,19 +40,19 @@ const Header = () => {
         <div>
           {Auth.loggedIn() ? (
             <>
-              <Link className="btn btn-lg btn-light m-2" to="/me">
+              <Link className="app__button btn btn-lg m-2" style={styles.app__button} to="/me">
                 {Auth.getProfile().data.username}'s Profile
               </Link>
-              <button className="btn btn-lg btn-light m-2" onClick={logout}>
+              <button className="app__button btn btn-lg m-2" style={styles.app__button} onClick={logout}>
                 Logout
               </button>
             </>
           ) : (
             <>
-              <Link className="btn btn-lg btn-light m-2" to="/login">
+              <Link className="app__button btn btn-lg m-2" style={styles.app__button} to="/login">
                 Login
               </Link>
-              <Link className="btn btn-lg btn-light m-2" to="/signup">
+              <Link className="app__button btn btn-lg m-2" style={styles.app__button} to="/signup">
                 Signup
               </Link>
             </>
