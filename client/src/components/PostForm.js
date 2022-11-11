@@ -10,8 +10,8 @@ import Auth from '../utils/auth';
 const PostForm = () => {
     const styles = {
         add__post__button: {
-            backgroundColor: '#5d0cff',
             color: 'white',
+            background: 'linear-gradient(90deg, rgba(93, 12, 255, 1) 0%, rgba(155, 0, 250, 1) 100%) ',
         }
     }
     const [image, setImage] = useState('');
