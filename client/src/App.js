@@ -1,40 +1,39 @@
-import React from 'react';
+import React from "react";
 import {
   ApolloClient,
   InMemoryCache,
   ApolloProvider,
   createHttpLink,
-} from '@apollo/client';
-import { setContext } from '@apollo/client/link/context';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+} from "@apollo/client";
+import { setContext } from "@apollo/client/link/context";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-
-import Home from './components/pages/Home/Home';
-import Signup from './components/pages/Signup';
-import Login from './components/pages/Login';
-import SinglePost from './components/pages/SinglePost';
+import Home from "./components/pages/Home/Home";
+import Signup from "./components/pages/Signup";
+import Login from "./components/pages/Login";
+import SinglePost from "./components/pages/SinglePost";
 import Post from './components/pages/Post/Post';
-import TodoList from './components/pages/Todo/TodoList';
-import Messages from './components/pages/Messages/Messages';
-import ProfileA from './components/pages/ProfileA/ProfileB';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import './App.css';
+import TodoList from "./components/pages/Todo/TodoList";
+import Note from "./components/pages/Notes/Note";
+import ProfileA from "./components/pages/ProfileA/ProfileB";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import "./App.css";
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
-  uri: '/graphql',
+  uri: "/graphql",
 });
 
 // Construct request middleware that will attach the JWT token to every request as an `authorization` header
 const authLink = setContext((_, { headers }) => {
   // get the authentication token from local storage if it exists
-  const token = localStorage.getItem('id_token');
+  const token = localStorage.getItem("id_token");
   // return the headers to the context so httpLink can read them
   return {
     headers: {
       ...headers,
-      authorization: token ? `Bearer ${token}` : '',
+      authorization: token ? `Bearer ${token}` : "",
     },
   };
 });
@@ -53,42 +52,15 @@ function App() {
           <Header />
           <div className="container">
             <Routes>
-              <Route
-                path="/"
-                element={<Home />}
-              />
-              <Route
-                path="/login"
-                element={<Login />}
-              />
-              <Route
-                path="/signup"
-                element={<Signup />}
-              />
-              <Route
-                path="/post"
-                element={<Post />}
-              />
-              <Route className='todo-app'
-                path="/todoList"
-                element={<TodoList />}
-              />
-              <Route
-                path="/messages"
-                element={<Messages />}
-              />
-              <Route
-                path="/me"
-                element={<ProfileA />}
-              />
-              <Route
-                path="/profiles/:username"
-                element={<ProfileA />}
-              />
-              <Route
-                path="/posts/:postId"
-                element={<SinglePost />}
-              />
+              <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
+              <Route path="/post" element={<Post />} />
+              <Route path="/posts/:postId" element={<SinglePost />} />
+              <Route className='todo-app' path="/todoList" element={<TodoList />} />
+              <Route path="/notes" element={<Note />} />
+              <Route path="/me" element={<ProfileA />} />
+              <Route path="/profiles/:username" element={<ProfileA />} />
             </Routes>
           </div>
           <Footer />

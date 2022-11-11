@@ -1,13 +1,13 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import MessageForm from "../../MessageForm";
+import Notes from "../../Notes";
 
-function Messages() {
+function Note() {
   return (
     <Container>
-      <MessageForm />
+      <Notes />
     </Container>
   );
 }
 
-export default Messages;
+export default Note;
