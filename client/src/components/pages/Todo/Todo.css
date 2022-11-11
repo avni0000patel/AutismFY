@@ -27,7 +27,7 @@
   }
   
   .todo-form {
-    margin-bottom: 32px;
+    margin-bottom: 100px;
   }
   
   .todo-input {
@@ -83,7 +83,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 4px auto;
+    margin: 10px auto;
     color: #fff;
     background: linear-gradient(
       90deg,
@@ -135,3 +135,10 @@
   .edit-icon {
     color: #fff;
   }
+
+  .margin-buttom{
+    margin-bottom: 40px;
+    color:transparent;
+  }
+
+ 
