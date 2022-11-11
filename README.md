@@ -40,7 +40,7 @@ XYZ XYZ XYZ
 
 ### 💻Link to Deployed Heroku App:
 
-- https://
+- https://hidden-beach-19071.herokuapp.com/
 
 ### 📂Link to the Repo:
 
