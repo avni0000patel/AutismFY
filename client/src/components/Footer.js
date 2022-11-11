@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function NavTabs() {
-
   const styles = {
     footer: {
       backgroundColor: "white",
@@ -32,21 +31,20 @@ function NavTabs() {
             Todo
           </li>
         </Link>
-        <Link className="" to="/messages">
+        <Link className="" to="/notes">
           <li className="nav-item" style={styles.link}>
-            Messages
+            Notes
           </li>
         </Link>
-        
+
         <Link className="" to="/me">
           <li className="nav-item" style={styles.link}>
-            Profile 
+            Profile
           </li>
         </Link>
       </ul>
     </footer>
   );
-
 }
 
 export default NavTabs;

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "./MessageForm.css";
+import "./Notes.css";
 import Draggable from "react-draggable";
 import { v4 as uuidv4 } from "uuid";
 var randomColor = require("randomcolor");
 
-function MessageForm() {
+function Notes() {
   const [item, setItem] = useState("");
   const [items, setItems] = useState(
     JSON.parse(localStorage.getItem("items")) || []
@@ -81,4 +81,4 @@ function MessageForm() {
   );
 }
 
-export default MessageForm;
+export default Notes;
