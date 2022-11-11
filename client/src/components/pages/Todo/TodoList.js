@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 import Auth from "../../../utils/auth";
@@ -8,7 +8,16 @@ import Todo from "./Todo";
 import "./Todo.css";
 
 function TodoList() {
-  const [todos, setTodos] = useState([]);
+    
+  const [todos, setTodos] =useState(
+    JSON.parse(localStorage.getItem("todos")) || []
+  );
+  
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }, [todos]);
+
+
 
   const addTodo = (todo) => {
     if (!todo.text || /^\s*$/.test(todo.text)) {
