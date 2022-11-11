@@ -46,7 +46,7 @@ const PostList = ({
                 posts.map((post) => (
                     <div key={post._id} className="post card mb-3" style={styles.post}>
                         <h4 className="post__header card-header bg-light text-dark p-2 m-0" style={styles.post__header}>
-                            <Avatar className="post__avatar" style={styles.post__avatar} alt={post.name} src={post.avatar}></Avatar>
+                            <Avatar className="post__avatar" style={styles.post__avatar} alt={post.name} src="/static/images/avatar/1.jpg"></Avatar>
                             {showUsername ? (
                                 <Link
                                     className="text-dark"

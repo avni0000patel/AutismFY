@@ -26,6 +26,11 @@ function NavTabs() {
             Home
           </li>
         </Link>
+        <Link className="" to="/post">
+          <li className="nav-item" style={styles.link}>
+            Post
+          </li>
+        </Link>
         <Link className="" to="/todoList">
           <li className="nav-item" style={styles.link}>
             To-Do
@@ -36,7 +41,6 @@ function NavTabs() {
             Notes
           </li>
         </Link>
-
         <Link className="" to="/me">
           <li className="nav-item" style={styles.link}>
             Profile

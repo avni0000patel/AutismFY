@@ -1,24 +1,20 @@
 [
     {
-        "avatar": "/static/images/avatar/1.jpg",
         "image": "https://psu-gatsby-files-prod.s3.amazonaws.com/s3fs-public/styles/4_3_2000w/public/2022/10/PSN-iStock.jpg?h=707772c7&itok=A55aiVDr",
         "postText": "Spread positivity!",
         "postAuthor": "Avni Patel"
     },
     {
-        "avatar": "/static/images/avatar/1.jpg",
         "image": "https://sites.uab.edu/humanrights/files/2021/03/aam2.jpg",
         "postText": "Raise awareness!",
         "postAuthor": "Meriem Powell"
     },
     {
-        "avatar": "/static/images/avatar/1.jpg",
         "image": "https://scx2.b-cdn.net/gfx/news/hires/2022/autism-7.jpg",
         "postText": "The brain can be a mysterious thing!",
         "postAuthor": "Pinar Aktas"
     },
     {
-        "avatar": "/static/images/avatar/1.jpg",
         "image": "https://yourkidsurgentcare.com/wp-content/uploads/2018/04/Untitled-design-4.png",
         "postText": "This is what autism means to me!",
         "postAuthor": "Olesia Chugaieva"

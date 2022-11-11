@@ -12,6 +12,7 @@ import Home from "./components/pages/Home/Home";
 import Signup from "./components/pages/Signup";
 import Login from "./components/pages/Login";
 import SinglePost from "./components/pages/SinglePost";
+import Post from './components/pages/Post/Post';
 import TodoList from "./components/pages/Todo/TodoList";
 import Note from "./components/pages/Notes/Note";
 import ProfileA from "./components/pages/ProfileA/ProfileB";
@@ -54,15 +55,12 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
-              <Route
-                className="todo-app"
-                path="/todoList"
-                element={<TodoList />}
-              />
+              <Route path="/post" element={<Post />} />
+              <Route path="/posts/:postId" element={<SinglePost />} />
+              <Route className='todo-app' path="/todoList" element={<TodoList />} />
               <Route path="/notes" element={<Note />} />
               <Route path="/me" element={<ProfileA />} />
               <Route path="/profiles/:username" element={<ProfileA />} />
-              <Route path="/posts/:postId" element={<SinglePost />} />
             </Routes>
           </div>
           <Footer />

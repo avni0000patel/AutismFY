@@ -26,11 +26,16 @@ const PostForm = () => {
             }
 
             // update me object's cache
-            const { me } = cache.readQuery({ query: QUERY_ME });
-            cache.writeQuery({
-                query: QUERY_ME,
-                data: { me: { ...me, posts: [...me.posts, addPost] } },
-            });
+            try {
+                const { me } = cache.readQuery({ query: QUERY_ME });
+                // a good spot to check what `me` is: console.log(me)
+                cache.writeQuery({
+                    query: QUERY_ME,
+                    data: { me: { ...me, posts: [...me.posts, addPost] } },
+                });
+            } catch (e) {
+                console.error(e);
+            }
         },
     });
 
@@ -76,14 +81,15 @@ const PostForm = () => {
                             <input
                                 type="text"
                                 name="image"
-                                placeholder="Create Post"
+                                placeholder="Enter image url..."
+                                value={image}
                                 className="form-input w-100"
                                 style={{ lineHeight: '1.5', resize: 'vertical' }}
                                 onChange={handlePhoto}
                             ></input>
                             <textarea
                                 name="postText"
-                                placeholder="Here's a new post..."
+                                placeholder="Enter caption..."
                                 value={postText}
                                 className="form-input w-100"
                                 style={{ lineHeight: '1.5', resize: 'vertical' }}

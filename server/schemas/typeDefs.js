@@ -11,7 +11,6 @@ const typeDefs = gql`
 
   type Post {
     _id: ID
-    avatar: String!
     image: String!
     postText: String!
     postAuthor: String
