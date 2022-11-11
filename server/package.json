@@ -14,10 +14,14 @@
   "dependencies": {
     "apollo-server-express": "^3.10.3",
     "bcrypt": "^4.0.1",
+    "connect-busboy": "^1.0.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "graphql": "^16.6.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.10"
+    "mongoose": "^5.9.10",
+    "package.json": "^2.0.1",
+    "randomstring": "^1.2.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"
