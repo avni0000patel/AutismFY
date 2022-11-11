@@ -1,5 +1,5 @@
 import React from "react";
-import "./planner.css";
+import "./Planner.css";
 import brush from "../../../../../src/assets/images/brush.png";
 import dressed from "../../../../../src/assets/images/dressed.png";
 import bed from "../../../../../src/assets/images/bed.png";

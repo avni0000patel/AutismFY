@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion/dist/framer-motion";
 import Planner from "./planner/Planner";
 
-import "./create.css";
+import "./Create.css";
 
 export default function Create({ currentPage, handlePageChange }) {
   return (
