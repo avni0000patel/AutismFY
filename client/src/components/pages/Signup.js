@@ -7,6 +7,12 @@ import { useMutation } from "@apollo/client";
 import { ADD_USER } from "../../utils/mutations";
 
 const SignupForm = () => {
+    const styles = {
+        button: {
+            color: 'white',
+            background: 'linear-gradient(90deg, rgba(93, 12, 255, 1) 0%, rgba(155, 0, 250, 1) 100%) ',
+        }
+    }
     // set initial form state
     const [userFormData, setUserFormData] = useState({ username: '', email: '', password: '' });
     // set state for form validation
@@ -95,10 +101,11 @@ const SignupForm = () => {
                     />
                     <Form.Control.Feedback type='invalid'>Password is required!</Form.Control.Feedback>
                 </Form.Group>
-                <Button
+                <br />
+                <Button className="btn btn-block py-3"
+                    style={styles.button}
                     disabled={!(userFormData.username && userFormData.email && userFormData.password)}
-                    type='submit'
-                    variant='success'>
+                    type='submit'>
                     Submit
                 </Button>
             </Form>
