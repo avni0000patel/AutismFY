@@ -26,11 +26,16 @@ const PostForm = () => {
             }
 
             // update me object's cache
-            const { me } = cache.readQuery({ query: QUERY_ME });
-            cache.writeQuery({
-                query: QUERY_ME,
-                data: { me: { ...me, posts: [...me.posts, addPost] } },
-            });
+            try {
+                const { me } = cache.readQuery({ query: QUERY_ME });
+                // a good spot to check what `me` is: console.log(me)
+                cache.writeQuery({
+                    query: QUERY_ME,
+                    data: { me: { ...me, posts: [...me.posts, addPost] } },
+                });
+            } catch (e) {
+                console.error(e);
+            }
         },
     });
 
