@@ -15,8 +15,8 @@ const Header = () => {
       fontFamily: "tahoma cursive",
     },
     app__button: {
-      backgroundColor: "#5d0cff",
       color: 'white',
+      background: 'linear-gradient(90deg, rgba(93, 12, 255, 1) 0%, rgba(155, 0, 250, 1) 100%) ',
     },
     app__login: {
       backgroundColor: "transparent",
@@ -33,7 +33,7 @@ const Header = () => {
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
           <Link className="app__header" style={styles.app__header} to="/">
-            <h1 className="m-0">AutismFY</h1>
+            <h1 className="m-0" style={styles.app__header}>AutismFY</h1>
           </Link>
           <p className="app__header m-0" style={styles.app__header}>The place where you can create, connect, and share!</p>
         </div>

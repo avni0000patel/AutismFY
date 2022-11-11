@@ -9,6 +9,12 @@ import Auth from "../utils/auth";
 var randomColor = require("randomcolor");
 
 function Notes() {
+  const styles = {
+    save__note__button: {
+      color: 'white',
+      background: 'linear-gradient(90deg, rgba(93, 12, 255, 1) 0%, rgba(155, 0, 250, 1) 100%) ',
+    }
+  }
   const [item, setItem] = useState("");
   const [items, setItems] = useState(
     JSON.parse(localStorage.getItem("items")) || []
@@ -62,7 +68,7 @@ function Notes() {
                 placeholder="Enter Note..."
                 onKeyPress={(e) => keyPress(e)}
               />
-              <button onClick={newItem}>SAVE NOTE</button>
+              <button className="save__note__button btn btn-lg m-2" style={styles.save__note__button} onClick={newItem}>SAVE NOTE</button>
             </div>
             <div id="items">
               {items.map((item, index) => {

@@ -8,6 +8,12 @@ import { QUERY_POSTS, QUERY_ME } from '../utils/queries';
 import Auth from '../utils/auth';
 
 const PostForm = () => {
+    const styles = {
+        add__post__button: {
+            color: 'white',
+            background: 'linear-gradient(90deg, rgba(93, 12, 255, 1) 0%, rgba(155, 0, 250, 1) 100%) ',
+        }
+    }
     const [image, setImage] = useState('');
 
     const [postText, setpostText] = useState('');
@@ -69,7 +75,6 @@ const PostForm = () => {
 
     return (
         <div>
-            <h3>Create Post</h3>
 
             {Auth.loggedIn() ? (
                 <>
@@ -84,7 +89,7 @@ const PostForm = () => {
                                 placeholder="Enter image url..."
                                 value={image}
                                 className="form-input w-100"
-                                style={{ lineHeight: '1.5', resize: 'vertical' }}
+                                style={{ lineHeight: '1.5', resize: 'vertical', border: '2px solid #5d0cff', }}
                                 onChange={handlePhoto}
                             ></input>
                             <textarea
@@ -92,13 +97,13 @@ const PostForm = () => {
                                 placeholder="Enter caption..."
                                 value={postText}
                                 className="form-input w-100"
-                                style={{ lineHeight: '1.5', resize: 'vertical' }}
+                                style={{ lineHeight: '1.5', resize: 'vertical', border: '2px solid #5d0cff', }}
                                 onChange={handleChange}
                             ></textarea>
                         </div>
 
                         <div className="col-12 col-lg-3">
-                            <button className="btn btn-primary btn-block py-3" type="submit">
+                            <button className="add__post__button btn btn-block py-3" style={styles.add__post__button} type="submit">
                                 Add Post
                             </button>
                         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Avatar, withTheme } from '@mui/material';
+import { Avatar } from '@mui/material';
 
 const PostList = ({
     posts,
@@ -38,8 +38,8 @@ const PostList = ({
             color: 'black',
         },
         post__comment: {
-            backgroundColor: '#5d0cff',
             color: 'white',
+            background: 'linear-gradient(90deg, rgba(93, 12, 255, 1) 0%, rgba(155, 0, 250, 1) 100%) ',
         }
     }
     return (
