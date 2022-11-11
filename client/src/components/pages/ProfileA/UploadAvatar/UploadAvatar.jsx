@@ -18,6 +18,7 @@ const Form = (props) => {
         })
         .then((res) => {
             props.reloadWithImg()
+            window.location.reload()
         })
   }
 
