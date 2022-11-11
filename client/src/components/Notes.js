@@ -61,15 +61,23 @@ function Notes() {
       {Auth.loggedIn() ? (
         <>
           <div className="NoteApp">
-            <div className="new-item">
-              <input
-                value={item}
-                onChange={(e) => setItem(e.target.value)}
-                placeholder="Enter Note..."
-                onKeyPress={(e) => keyPress(e)}
-              />
-              <button className="save__note__button btn btn-lg m-2" style={styles.save__note__button} onClick={newItem}>SAVE NOTE</button>
-            </div>
+            <form
+              className="flex-row justify-center justify-space-between-md align-center"
+            >
+              <div className="new-item col-12 col-lg-9">
+                <input
+                  value={item}
+                  onChange={(e) => setItem(e.target.value)}
+                  placeholder="Enter note..."
+                  className="form-input w-100"
+                  style={{ lineHeight: '1.5', resize: 'vertical', border: '2px solid #5d0cff', }}
+                  onKeyPress={(e) => keyPress(e)}
+                />
+              </div>
+              <div className="col-12 col-lg-3">
+                <button className="save__note__button btn btn-block py-3" style={styles.save__note__button} onClick={newItem}>Add Note</button>
+              </div>
+            </form>
             <div id="items">
               {items.map((item, index) => {
                 return (
@@ -100,8 +108,9 @@ function Notes() {
           You need to be logged in to write and save notes. Please{" "}
           <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
         </p>
-      )}
-    </div>
+      )
+      }
+    </div >
   );
 }
 
