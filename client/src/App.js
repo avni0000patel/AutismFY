@@ -13,6 +13,7 @@ import Home from './components/pages/Home/Home';
 import Signup from './components/pages/Signup';
 import Login from './components/pages/Login';
 import SinglePost from './components/pages/SinglePost';
+import Post from './components/pages/Post/Post';
 import TodoList from './components/pages/Todo/TodoList';
 import Messages from './components/pages/Messages/Messages';
 import ProfileA from './components/pages/ProfileA/ProfileB';
@@ -63,6 +64,10 @@ function App() {
               <Route
                 path="/signup"
                 element={<Signup />}
+              />
+              <Route
+                path="/post"
+                element={<Post />}
               />
               <Route className='todo-app'
                 path="/todoList"
