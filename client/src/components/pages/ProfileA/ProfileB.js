@@ -8,6 +8,7 @@ import PostList from '../../PostList';
 import { QUERY_USER, QUERY_ME } from '../../../utils/queries';
 
 import Auth from '../../../utils/auth';
+import ProfileContainer from './ProfileContainer';
 
 const Profile = () => {
     const { username: userParam } = useParams();
@@ -33,15 +34,18 @@ const Profile = () => {
                 sign up or log in!
             </h4>
         );
+    } else {
+        console.log(user)
     }
 
     return (
         <div>
+            <ProfileContainer user={user?user:null}/>
             <div className="flex-row justify-center mb-3">
                 <h2 className="col-12 col-md-10 bg-dark text-light p-3 mb-5">
                     Viewing {userParam ? `${user.username}'s` : 'your'} profile.
                 </h2>
-
+                
                 <div className="col-12 col-md-10 mb-5">
                     <PostList
                         posts={user.posts}

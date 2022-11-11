@@ -13,12 +13,9 @@ import Home from './components/pages/Home/Home';
 import Signup from './components/pages/Signup';
 import Login from './components/pages/Login';
 import SinglePost from './components/pages/SinglePost';
-import Create from './components/pages/Create/Create';
 import TodoList from './components/pages/Todo/TodoList';
-import Planner from './components/pages/Create/planner/Planner';
 import Messages from './components/pages/Messages/Messages';
-import ProfileA from './components/pages/ProfileA/ProfileContainer';
-import ProfileB from './components/pages/ProfileB/ProfileB';
+import ProfileA from './components/pages/ProfileA/ProfileB';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import './App.css';
@@ -67,33 +64,21 @@ function App() {
                 path="/signup"
                 element={<Signup />}
               />
-              <Route
-                path="/create"
-                element={<Create />}
-              />
-               <Route className='todo-app'
+              <Route className='todo-app'
                 path="/todoList"
                 element={<TodoList />}
-              />
-              <Route
-                path="/planner"
-                element={<Planner />}
               />
               <Route
                 path="/messages"
                 element={<Messages />}
               />
               <Route
-                path="/profileA"
+                path="/me"
                 element={<ProfileA />}
               />
               <Route
-                path="/me"
-                element={<ProfileB />}
-              />
-              <Route
                 path="/profiles/:username"
-                element={<ProfileB />}
+                element={<ProfileA />}
               />
               <Route
                 path="/posts/:postId"
