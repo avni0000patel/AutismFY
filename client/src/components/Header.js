@@ -6,7 +6,6 @@ import Auth from '../utils/auth';
 const Header = () => {
   const styles = {
     header: {
-      backgroundColor: "white",
       borderBottom: '2px solid #5d0cff',
     },
     app__header: {
