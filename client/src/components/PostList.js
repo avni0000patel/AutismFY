@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Avatar } from '@mui/material';
+import { Avatar, withTheme } from '@mui/material';
 
 const PostList = ({
     posts,
@@ -13,8 +13,7 @@ const PostList = ({
     }
     const styles = {
         post: {
-            backgroundColor: 'white',
-            border: '1px solid lightgray',
+            border: '2px solid #5d0cff',
             maxWidth: '700px',
             margin: 'auto',
         },
@@ -30,14 +29,18 @@ const PostList = ({
         post__image: {
             width: '100%',
             objectFit: 'contain',
-            borderTop: '1px solid lightgray',
-            borderBottom: '1px solid lightgray',
+            borderTop: '2px solid #5d0cff',
+            borderBottom: '2px solid #5d0cff',
         },
         post__caption: {
             fontWeight: 'normal',
             padding: '5px 5px',
             color: 'black',
         },
+        post__comment: {
+            backgroundColor: '#5d0cff',
+            color: 'white',
+        }
     }
     return (
         <div>
@@ -68,14 +71,15 @@ const PostList = ({
                         <div>
                             <img className="post__image card-text" style={styles.post__image} src={post.image} alt="postimage"></img>
                         </div>
-                        <div className="card-body">
-                            <p className="post__caption" style={styles.post__caption}>{post.postText}</p>
+                        <div className="card-body"> <strong>{post.postAuthor}</strong>
+                            <span className="post__caption" style={styles.post__caption}>{post.postText}</span>
                         </div>
                         <Link
-                            className="btn btn-primary btn-block btn-squared"
+                            className="post__comment btn btn-block btn-squared"
+                            style={styles.post__comment}
                             to={`/posts/${post._id}`}
                         >
-                            Join the discussion on this post.
+                            Click here to add and view comments...
                         </Link>
                     </div>
                 ))}

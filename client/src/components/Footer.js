@@ -15,33 +15,33 @@ function NavTabs() {
       height: "40px",
     },
     link: {
-      color: "#8e94f2",
+      color: "#5d0cff",
     },
   };
   return (
     <footer className="footer">
       <ul className="nav nav-tabs" style={styles.footer}>
-        <Link className="" to="/">
+        <Link className="btn m-2" to="/">
           <li className="nav-item" style={styles.link}>
             Home
           </li>
         </Link>
-        <Link className="" to="/post">
+        <Link className="btn m-2" to="/post">
           <li className="nav-item" style={styles.link}>
             Post
           </li>
         </Link>
-        <Link className="" to="/todoList">
+        <Link className="btn m-2" to="/todoList">
           <li className="nav-item" style={styles.link}>
             To-Do
           </li>
         </Link>
-        <Link className="" to="/notes">
+        <Link className="btn m-2" to="/notes">
           <li className="nav-item" style={styles.link}>
             Notes
           </li>
         </Link>
-        <Link className="" to="/me">
+        <Link className="btn m-2" to="/me">
           <li className="nav-item" style={styles.link}>
             Profile
           </li>
