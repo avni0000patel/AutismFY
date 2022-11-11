@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {connect} from 'react-redux'
-import {setProfile, changeBio, changeFormBio} from '../../../redux/profileReducer'
+import {setProfile, changeBio, changeFormBio,getPhoto} from '../../../redux/profileReducer'
 import Profile from './Profile';
 import axios from 'axios'
 let mapStateToProps = (state) => ({
@@ -11,7 +11,8 @@ let mapStateToProps = (state) => ({
 let mapDispatchToProps = { 
     setProfile,
     changeBio,
-    changeFormBio
+    changeFormBio,
+    getPhoto
 }
 
 class ProfileApiContainer extends React.Component{
@@ -19,7 +20,12 @@ class ProfileApiContainer extends React.Component{
         super(props)
     }
     componentDidMount(){
-        axios.post('http://localhost:3001/api-posts/get',{
+        console.log(this.props.user.username)
+        axios.get(`http://localhost:3001/api-user/get-avatar?username=${this.props.user.username}`)
+        .then((res)=>{
+            this.props.getPhoto(res.data.avatar)
+        })
+        /*axios.post('http://localhost:3001/api-user/get',{
             _id:"this.props.user.posts[0].type"
         })
         .then((res) => { 
@@ -27,8 +33,9 @@ class ProfileApiContainer extends React.Component{
         })
         .catch((err)=>{
             console.log(err)
-        })
+        })*/
     }
+   
     render(){
         
         return (

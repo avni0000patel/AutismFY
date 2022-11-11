@@ -6,6 +6,11 @@ const { authMiddleware } = require('./utils/auth');
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
 
+const cors = require('cors')
+const busBoy = require('connect-busboy')
+
+const routerPosts = require('./routers/routerPosts')
+
 const PORT = process.env.PORT || 3001;
 const app = express();
 const server = new ApolloServer({
@@ -13,6 +18,15 @@ const server = new ApolloServer({
     resolvers,
     context: authMiddleware,
 });
+
+app.use(cors({
+    origin: 'http://localhost:3000',
+    optionsSuccessStatus: 200
+  }))
+app.use(busBoy())
+app.use('/static',express.static(__dirname+'/static'))
+
+app.use('/api-user', routerPosts)
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
