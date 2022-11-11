@@ -13,6 +13,7 @@ function NavTabs() {
       bottom: "0",
       width: "100%",
       height: "40px",
+      borderTop: '2px solid #5d0cff',
     },
     link: {
       color: "#5d0cff",

@@ -33,7 +33,7 @@ const Header = () => {
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
           <Link className="app__header" style={styles.app__header} to="/">
-            <h1 className="m-0">AutismFY</h1>
+            <h1 className="m-0" style={styles.app__header}>AutismFY</h1>
           </Link>
           <p className="app__header m-0" style={styles.app__header}>The place where you can create, connect, and share!</p>
         </div>
