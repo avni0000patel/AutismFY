@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import Notes from "../../Notes";
 
-function Notes() {
+function Note() {
   return (
     <Container>
       <Notes />
@@ -10,4 +10,4 @@ function Notes() {
   );
 }
 
-export default Notes;
+export default Note;
