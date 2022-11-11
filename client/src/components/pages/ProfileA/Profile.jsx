@@ -6,7 +6,7 @@ import followingIco from '../../../assets/profile/img/following.svg'
 import uploadIco from '../../../assets/profile/img/upload.svg'
 import menuIco from '../../../assets/profile/img/menu.svg'
 
-//import UploadAvatar from './UploadAvatar/UploadAvatar'
+import UploadAvatar from './UploadAvatar/UploadAvatar'
 import BioText from './BioBlock/BioText'
 import BioChanger from './BioBlock/BioChange'
 import ProfileCards from './ProfileCards/ProfileCards'
@@ -16,7 +16,7 @@ const Profile = (props) => {
     return(
         <>
             <div className={style.profileBlock}>
-            <img className={style.imgProfile} src={profilePhoto} alt="" />
+            {!props.profile.changer? <img className={style.imgProfile} src={'http://localhost:3001/static/img/'} alt=""/> : <UploadAvatar setProfile={props.setProfile} reloadWithImg={props.changeFormBio}/>}
                 <div className={style.follAndBio}>
                     <div className={style.profileInfo}>
                     <div className={style.follBlock}>
