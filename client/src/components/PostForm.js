@@ -27,27 +27,27 @@ const PostForm = () => {
                     query: QUERY_POSTS,
                     data: { posts: [addPost, ...posts] },
                 });
-            } catch (e) {
-                console.error(e);
+            } catch (error) {
+                throw error;
             }
 
             // update me object's cache
             try {
                 const { me } = cache.readQuery({ query: QUERY_ME });
-                // a good spot to check what `me` is: console.log(me)
+
                 cache.writeQuery({
                     query: QUERY_ME,
                     data: { me: { ...me, posts: [...me.posts, addPost] } },
                 });
-            } catch (e) {
-                console.error(e);
+            } catch (error) {
+                throw error;
             }
         },
     });
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
-        console.log(image);
+
         try {
             const { data } = await addPost({
                 variables: {
@@ -58,8 +58,8 @@ const PostForm = () => {
             });
             setImage('')
             setpostText('');
-        } catch (err) {
-            console.error(err);
+        } catch (error) {
+            throw error;
         }
     };
 

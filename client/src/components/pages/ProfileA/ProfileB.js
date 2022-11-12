@@ -2,7 +2,6 @@ import React from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
-//import PostForm from '../../PostForm';
 import PostList from '../../PostList';
 
 import { QUERY_USER, QUERY_ME } from '../../../utils/queries';
@@ -34,21 +33,21 @@ const Profile = () => {
                 sign up or log in!
             </h4>
         );
-    } else {
-        console.log(user)
-    }
+    };
 
     return (
         <div>
             <ProfileContainer user={user ? user : null} />
             <div >
-                <div className="col-12 col-md-10 mb-5">
-                    <PostList
-                        posts={user.posts}
-                        title={`${user.username}'s posts...`}
-                        showTitle={false}
-                        showUsername={false}
-                    />
+                <div className="flex-row justify-center">
+                    <div className="col-12 col-md-10 mb-5">
+                        <PostList
+                            posts={user.posts}
+                            title={`${user.username}'s posts...`}
+                            showTitle={false}
+                            showUsername={false}
+                        />
+                    </div>
                 </div>
             </div>
         </div>
