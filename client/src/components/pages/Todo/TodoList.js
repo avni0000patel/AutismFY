@@ -73,7 +73,7 @@ function TodoList() {
           <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
         </p>
       )}
-      <div className="margin-buttom">For Margin</div>
+      <div className="margin-buttom"></div>
     </div>
   );
 }
