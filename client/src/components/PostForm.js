@@ -74,7 +74,7 @@ const PostForm = () => {
     };
 
     return (
-        <div>
+        <div><h1 className='head'>Create Post</h1>
 
             {Auth.loggedIn() ? (
                 <>
