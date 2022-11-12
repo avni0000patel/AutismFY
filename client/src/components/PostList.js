@@ -71,7 +71,7 @@ const PostList = ({
                         <div>
                             <img className="post__image card-text" style={styles.post__image} src={post.image} alt="postimage"></img>
                         </div>
-                        <div className="card-body"> <strong>{post.postAuthor}</strong>
+                        <div className="card-body"> <strong style={{ color: 'black' }}>{post.postAuthor}</strong>
                             <span className="post__caption" style={styles.post__caption}>{post.postText}</span>
                         </div>
                         <Link
