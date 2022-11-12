@@ -1,14 +1,14 @@
 import React from 'react'
 
-import {connect} from 'react-redux'
-import {setProfile, changeBio, changeFormBio,getPhoto, getBio} from '../../../redux/profileReducer'
+import { connect } from 'react-redux'
+import { setProfile, changeBio, changeFormBio, getPhoto, getBio } from '../../../redux/profileReducer'
 import Profile from './Profile';
 import axios from 'axios'
 let mapStateToProps = (state) => ({
-    profile:state.profileStore
+    profile: state.profileStore
 })
 
-let mapDispatchToProps = { 
+let mapDispatchToProps = {
     setProfile,
     changeBio,
     changeFormBio,
@@ -16,26 +16,25 @@ let mapDispatchToProps = {
     getBio
 }
 
-class ProfileApiContainer extends React.Component{
-    constructor(props){ 
+class ProfileApiContainer extends React.Component {
+    constructor(props) {
         super(props)
     }
-    componentDidMount(){
-        console.log(this.props.user.username)
+    componentDidMount() {
         axios.get(`http://localhost:3001/api-user/get-avatar?username=${this.props.user.username}`)
-        .then((res)=>{
-            this.props.getPhoto(res.data.avatar)
-            this.props.getBio(res.data.bio)
-        })
+            .then((res) => {
+                this.props.getPhoto(res.data.avatar)
+                this.props.getBio(res.data.bio)
+            })
     }
-    setBio(){
+    setBio() {
 
     }
-    render(){
-        
+    render() {
+
         return (
             <Profile
-                setBio = {this.setBio}
+                setBio={this.setBio}
                 {...this.props}
             />
         )
@@ -43,4 +42,4 @@ class ProfileApiContainer extends React.Component{
 }
 
 
-export default connect(mapStateToProps,mapDispatchToProps)(ProfileApiContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(ProfileApiContainer)

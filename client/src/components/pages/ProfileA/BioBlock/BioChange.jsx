@@ -7,7 +7,6 @@ const BioChanger = (props) => {
     let bioRef = React.createRef()
     const changeFormOnClick = async () => {
         axios.get(`http://localhost:3001/api-user/change-bio?bio=${bioRef.current.value}&username=${props.user.username}`).then((res) => {
-            console.log(res.data)
             props.changeBio(bioRef.current.value)
             props.changeFormBio()
         })

@@ -25,8 +25,8 @@ const CommentForm = ({ postId }) => {
             });
 
             setCommentText('');
-        } catch (err) {
-            console.error(err);
+        } catch (error) {
+            throw error;
         }
     };
 

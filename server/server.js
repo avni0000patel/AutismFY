@@ -22,9 +22,9 @@ const server = new ApolloServer({
 app.use(cors({
     origin: 'http://localhost:3000',
     optionsSuccessStatus: 200
-  }))
+}))
 app.use(busBoy())
-app.use('/static',express.static(__dirname+'/static'))
+app.use('/static', express.static(__dirname + '/static'))
 
 app.use('/api-user', routerPosts)
 

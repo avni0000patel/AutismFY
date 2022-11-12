@@ -4,9 +4,7 @@ import axios from 'axios'
 const Form = (props) => {
   // a local state to store the currently selected file.
   const [selectedFile, setSelectedFile] = React.useState(null)
-  console.log(props.user)
   const handleSubmit = async (event) => {
-    console.log(props.user)
     event.preventDefault()
     const formData = new FormData()
     formData.append("selectedFile", selectedFile)

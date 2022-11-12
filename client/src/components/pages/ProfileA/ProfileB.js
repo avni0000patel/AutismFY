@@ -34,9 +34,7 @@ const Profile = () => {
                 sign up or log in!
             </h4>
         );
-    } else {
-        console.log(user)
-    }
+    };
 
     return (
         <div>
