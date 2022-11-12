@@ -1,4 +1,15 @@
-
+.welcome{
+background-color: blueviolet;
+display: flex;
+width: 100%;
+padding-bottom: 3px;
+padding-top: 5px;
+padding-left: 38px;
+margin-bottom: 10px;
+}
+h2 {
+color:whitesmoke;
+}
 .profileBlock{
     display: flex;
     width: 100%;
