@@ -60,10 +60,10 @@ function Notes() {
     <div>
       {Auth.loggedIn() ? (
         <>
-          <div className="NoteApp">
+          <div className="NoteApp"><h1 className="head">Create Note</h1>
             <form
-              className="flex-row justify-center justify-space-between-md align-center"
-            >
+              className="flex-row justify-center justify-space-between-md align-center">
+                
               <div className="new-item col-12 col-lg-9">
                 <input
                   value={item}

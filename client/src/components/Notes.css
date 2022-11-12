@@ -23,6 +23,15 @@
   transform: translate(-50%, -50%);
 }
 
+.head {
+  margin: 20px 0;
+  color: black;
+  font-size: 35px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
 input {
   border-radius: 5px;
   color: black;
