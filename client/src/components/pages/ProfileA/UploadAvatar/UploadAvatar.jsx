@@ -11,7 +11,7 @@ const Form = (props) => {
     const formData = new FormData()
     formData.append("selectedFile", selectedFile)
     axios
-      .post(`/api-user/uploadPhoto?username=${props.user.username}`, formData, {
+      .post(`http://localhost:3001/api-user/uploadPhoto?username=${props.user.username}`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
