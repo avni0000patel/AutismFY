@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import logo from "../assets/images/AppLogo.png";
+
 import Auth from "../utils/auth";
 
 const Header = () => {
@@ -10,6 +12,8 @@ const Header = () => {
       borderBottom: "2px solid #5d0cff",
     },
     app__header: {
+      width: "200px",
+      height: "150px",
       backgroundColor: "transparent",
       color: "#5d0cff",
       fontFamily: "tahoma cursive",
@@ -37,13 +41,14 @@ const Header = () => {
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
           <Link className="app__header" style={styles.app__header} to="/">
-            <h1 className="m-0" style={styles.app__header}>
-              AutismFY
-            </h1>
+            {/* <h1 className="m-0" style={styles.app__header}>
+              AutismFY */}
+            <img src={logo} alt="Logo" style={styles.app__header} />
+            {/* </h1> */}
           </Link>
-          <p className="app__header m-0" style={styles.app__header}>
+          {/* <p className="app__header m-0" style={styles.app__header}>
             The place where you can create, connect, and share!
-          </p>
+          </p> */}
         </div>
         <div>
           {Auth.loggedIn() ? (
