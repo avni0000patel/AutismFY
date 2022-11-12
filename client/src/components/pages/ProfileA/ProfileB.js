@@ -40,13 +40,15 @@ const Profile = () => {
         <div>
             <ProfileContainer user={user ? user : null} />
             <div >
-                <div className="col-12 col-md-10 mb-5">
-                    <PostList
-                        posts={user.posts}
-                        title={`${user.username}'s posts...`}
-                        showTitle={false}
-                        showUsername={false}
-                    />
+                <div className="flex-row justify-center">
+                    <div className="col-12 col-md-10 mb-5">
+                        <PostList
+                            posts={user.posts}
+                            title={`${user.username}'s posts...`}
+                            showTitle={false}
+                            showUsername={false}
+                        />
+                    </div>
                 </div>
             </div>
         </div>
