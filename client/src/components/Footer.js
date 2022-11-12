@@ -22,27 +22,27 @@ function NavTabs() {
   return (
     <footer className="footer">
       <ul className="nav nav-tabs" style={styles.footer}>
-        <Link className="btn m-2" to="/">
+        <Link className="" to="/">
           <li className="nav-item" style={styles.link}>
             Home
           </li>
         </Link>
-        <Link className="btn m-2" to="/post">
+        <Link className="" to="/post">
           <li className="nav-item" style={styles.link}>
             Post
           </li>
         </Link>
-        <Link className="btn m-2" to="/todoList">
+        <Link className="" to="/todoList">
           <li className="nav-item" style={styles.link}>
             To-Do
           </li>
         </Link>
-        <Link className="btn m-2" to="/notes">
+        <Link className="" to="/notes">
           <li className="nav-item" style={styles.link}>
             Notes
           </li>
         </Link>
-        <Link className="btn m-2" to="/me">
+        <Link className="" to="/me">
           <li className="nav-item" style={styles.link}>
             Profile
           </li>
