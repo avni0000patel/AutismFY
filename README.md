@@ -39,7 +39,7 @@ When I want to create a post
 Then I can click on Post tab
 Then I can create a post by adding a text and an image URL for image to upload to my profile newsfeed
 When I want to view all my posts
-Then I click on Profile tab to see all my posts and be able to delete a post
+Then I click on Profile tab to see all my posts
 When I want to view the newsfeed of all posts from friends and myself
 Then I click on Home tab
 When I want to log out
