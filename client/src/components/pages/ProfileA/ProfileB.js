@@ -2,7 +2,6 @@ import React from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
-//import PostForm from '../../PostForm';
 import PostList from '../../PostList';
 
 import { QUERY_USER, QUERY_ME } from '../../../utils/queries';
