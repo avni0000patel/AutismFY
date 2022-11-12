@@ -11,7 +11,7 @@ const Profile = (props) => {
                 <h2 className={style.welcome}>Your AutismFY Profile</h2>
             </div>
             <div className={style.profileBlock}>
-                {!props.profile.changer ? <img className={style.imgProfile} src={`/static/img/${props.profile.imgSrc}`} alt="" /> : <UploadAvatar setProfile={props.setProfile} reloadWithImg={props.changeFormBio} user={props.user} />}
+                {!props.profile.changer ? <img className={style.imgProfile} src={`http://localhost:3001/static/img/${props.profile.imgSrc}`} alt="" /> : <UploadAvatar setProfile={props.setProfile} reloadWithImg={props.changeFormBio} user={props.user} />}
                 <div className={style.follAndBio}>
                     <div className={style.profileInfo}>
                         <div></div>
