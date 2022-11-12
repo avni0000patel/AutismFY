@@ -57,7 +57,7 @@ function TodoList() {
       {Auth.loggedIn() ? (
         <>
           <div>
-            <h1 className="head">Create To-do</h1>
+            <h1 className="head">Create Todo</h1>
             <TodoForm onSubmit={addTodo} />
             <Todo
               todos={todos}

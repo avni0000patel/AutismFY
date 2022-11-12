@@ -45,7 +45,7 @@ function TodoForm(props) {
           </div>
           <div className="col-12 col-lg-3">
             <button className="add__todo__button btn btn-block py-3" style={styles.add__todo__button} type="submit">
-              Update Todo
+              Update todo
             </button>
           </div>
         </>
@@ -54,7 +54,7 @@ function TodoForm(props) {
           <div className="col-12 col-lg-9">
             <input
               type="text"
-              placeholder="Add a todo"
+              placeholder="Enter todo..."
               value={input}
               name="text"
               className="form-input w-100"
