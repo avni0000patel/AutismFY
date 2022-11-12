@@ -25,10 +25,11 @@ const Form = (props) => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="file" onChange={handleFileSelect} />
-      <input type="submit" value="Upload File" />
-    </form>
+    <form className="flex-row justify-center align-center" onSubmit={handleSubmit}>
+      < input type="file" onChange={handleFileSelect} />
+      <br />
+      < input type="submit" value="Upload File" />
+    </form >
   )
 }
 
