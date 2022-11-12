@@ -4,7 +4,7 @@
 
 ## 🏫 AutismFY: Routines, Boards & Connections
 
-This application is designed to help parents and caregivers of younger Autistic children create routine To-Do Lists, log important information in a Notes tab, share and connect with other parents and caregives by creating posts. In this project we will build and design this app using the React, create our own server-side API, add user authentication, and connect to a database.
+This application is designed to help parents and caregivers of younger Autistic children create routine To-Do Lists, log important information in a Notes tab, share and connect with other parents and caregivers by creating posts. In this project we will build and design this app using the React, create our own server-side API, add user authentication, and connect to a database.
 
 ## ✍️User Story:
 
